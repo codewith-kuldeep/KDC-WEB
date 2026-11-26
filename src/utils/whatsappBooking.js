@@ -16,7 +16,7 @@ export function normalizeWhatsAppNumber(rawNumber = CLINIC_INFO.phone) {
  */
 export function formatBookingWhatsAppMessage(booking) {
     const fullName = `${booking.firstName?.trim() || ""} ${booking.lastName?.trim() || ""}`.trim();
-    const complaint = booking.chiefComplaint ? .trim() || "Not provided";
+    const complaint = (booking.chiefComplaint || "").trim() || "Not provided";
 
     return [
             `*New Appointment Booking - ${CLINIC_INFO.name}*`,
