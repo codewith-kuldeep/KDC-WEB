@@ -20,9 +20,14 @@ import {
   Download, 
   CheckCircle2, 
   AlertCircle,
-  FileText
+  FileText,
+  MessageCircle
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import {
+  buildWhatsAppUrl,
+  submitBookingToWhatsAppApi
+} from '../utils/whatsappBooking';
 
 export default function BookingWizard({ preselectedService, preselectedDoctor, onResetPreselected }) {
   const [step, setStep] = useState(1);
@@ -55,6 +60,9 @@ export default function BookingWizard({ preselectedService, preselectedDoctor, o
 
   const [bookingReference, setBookingReference] = useState("");
   const [errors, setErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [whatsappUrl, setWhatsappUrl] = useState("");
+  const [whatsappNotice, setWhatsappNotice] = useState("");
 
   // Sync if preselected props change
   useEffect(() => {
@@ -80,12 +88,41 @@ export default function BookingWizard({ preselectedService, preselectedDoctor, o
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleNextStep = () => {
+  const handleNextStep = async () => {
     if (step === 3) {
-      if (!validateStep3()) return;
+      if (!validateStep3() || isSubmitting) return;
       
-      // Generate booking reference & trigger confetti celebration
+      // Generate booking reference & send details to clinic WhatsApp
       const ref = `ELAN-${Math.floor(100000 + Math.random() * 900000)}`;
+      const bookingPayload = {
+        bookingReference: ref,
+        appointmentType,
+        serviceTitle: activeService.title,
+        serviceDuration: activeService.duration,
+        doctorName: activeDoctor.name,
+        selectedDate,
+        selectedTime,
+        ...patientData
+      };
+
+      const waUrl = buildWhatsAppUrl(bookingPayload, CLINIC_INFO.phone);
+      setWhatsappUrl(waUrl);
+
+      if (import.meta.env.VITE_USE_WHATSAPP_API === "true") {
+        setIsSubmitting(true);
+        try {
+          await submitBookingToWhatsAppApi(bookingPayload);
+          setWhatsappNotice("Appointment details were sent automatically to our clinic WhatsApp.");
+        } catch {
+          setWhatsappNotice("Automatic dispatch was unavailable—tap 'Send Details on WhatsApp' below.");
+        } finally {
+          setIsSubmitting(false);
+        }
+      } else {
+        window.open(waUrl, "_blank", "noopener,noreferrer");
+        setWhatsappNotice("WhatsApp opened with your booking summary—tap Send if it didn't open automatically.");
+      }
+
       setBookingReference(ref);
       setStep(4);
 
@@ -616,10 +653,11 @@ END:VCALENDAR`;
                 </button>
                 <button
                   type="button"
+                  disabled={isSubmitting}
                   onClick={handleNextStep}
-                  className="px-8 py-3.5 rounded-full bg-[#1B382B] hover:bg-[#254435] text-white text-sm font-semibold flex items-center space-x-2 shadow-lg shadow-[#1B382B]/20 transition-all group"
+                  className="px-8 py-3.5 rounded-full bg-[#1B382B] hover:bg-[#254435] disabled:opacity-60 text-white text-sm font-semibold flex items-center space-x-2 shadow-lg shadow-[#1B382B]/20 transition-all group"
                 >
-                  <span>Confirm Priority Booking</span>
+                  <span>{isSubmitting ? "Confirming..." : "Confirm Priority Booking"}</span>
                   <CheckCircle2 className="w-4 h-4 text-[#DFBF6D]" />
                 </button>
               </div>
@@ -641,6 +679,11 @@ END:VCALENDAR`;
                 <p className="text-xs text-[#3E4F45] max-w-md mx-auto">
                   A concierge welcome confirmation packet has been dispatched to <span className="font-bold text-[#1B382B]">{patientData.email}</span>.
                 </p>
+                {whatsappNotice && (
+                  <p className="text-xs font-medium text-emerald-800 max-w-md mx-auto">
+                    {whatsappNotice}
+                  </p>
+                )}
               </div>
 
               {/* Digital Boarding Pass Ticket */}
@@ -735,6 +778,17 @@ END:VCALENDAR`;
 
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-4">
+                {whatsappUrl && (
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#25D366] hover:bg-[#1fb858] text-white text-xs font-bold flex items-center justify-center space-x-2 shadow-md transition-colors"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    <span>Send Details on WhatsApp</span>
+                  </a>
+                )}
                 <button
                   onClick={handleDownloadCalendar}
                   className="w-full sm:w-auto px-6 py-3 rounded-full bg-[#1B382B] text-white text-xs font-bold flex items-center justify-center space-x-2"
@@ -745,6 +799,8 @@ END:VCALENDAR`;
                 <button
                   onClick={() => {
                     setStep(1);
+                    setWhatsappUrl("");
+                    setWhatsappNotice("");
                     setPatientData({
                       firstName: "",
                       lastName: "",
