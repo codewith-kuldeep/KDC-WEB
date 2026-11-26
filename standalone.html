@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaushish Physiotherapy Center</title>
+    <meta name="description" content="Experience high-performance kinetic physical therapy, spinal decompression, and sports rehabilitation in a luxurious restorative sanctuary." />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Canvas Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        forest: '#1B382B',
+                        sage: '#2A483A',
+                        eucalyptus: '#4E7C67',
+                        gold: '#C29B38',
+                        linen: '#FAF7F2'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @keyframes floatSlow {
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-12px) rotate(1.5deg);
+            }
+        }
+        
+        @keyframes floatReverse {
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(10px) rotate(-1.5deg);
+            }
+        }
+        
+        @keyframes pulseGlow {
+            0%,
+            100% {
+                opacity: 0.35;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.65;
+                transform: scale(1.06);
+            }
+        }
+        
+        .animate-float-slow {
+            animation: floatSlow 7s ease-in-out infinite;
+        }
+        
+        .animate-float-reverse {
+            animation: floatReverse 8s ease-in-out infinite;
+        }
+        
+        .animate-pulse-glow {
+            animation: pulseGlow 6s ease-in-out infinite;
+        }
+        
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(226, 218, 206, 0.7);
+        }
+        
+        .glass-panel-dark {
+            background: rgba(27, 56, 43, 0.92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(194, 155, 56, 0.3);
+        }
+        
+        .gold-accent-text {
+            background: linear-gradient(135deg, #DFBF6D 0%, #C29B38 50%, #9B7723 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-[#FAF7F2] text-[#1E2421] antialiased selection:bg-[#2A483A] selection:text-[#FAF7F2] overflow-x-hidden font-sans">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-[#1B382B] text-[#E6E1D8] text-xs font-medium py-2 px-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+                <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] tracking-wide font-semibold bg-[#2A483A] text-[#DFBF6D] border border-[#DFBF6D]/30">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping mr-1.5"></span> SAME-DAY EVALUATIONS
+                </span>
+                <span class="hidden md:inline text-[#B5C2BA] ml-2">
+          Meerut • 1-on-1 Doctor of PhysioTherapy Care
+        </span>
+            </div>
+            <div class="flex items-center space-x-6 text-xs">
+                <a href="tel:+919368869685" class="flex items-center space-x-1.5 text-[#DFBF6D] hover:text-white transition-colors">
+                    <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+                    <span class="font-semibold">+91 9368869685</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Floating Navbar -->
+    <header class="sticky top-0 z-50 bg-[#FAF7F2]/90 backdrop-blur-xl border-b border-[#E7DFD4] py-3.5 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-11 h-11 rounded-2xl bg-gradient-to-br from-[#1B382B] to-[#2A483A] flex items-center justify-center text-[#DFBF6D] shadow-md border border-[#DFBF6D]/30">
+                    <i data-lucide="activity" class="w-6 h-6 stroke-[2.2]"></i>
+                </div>
+                <div>
+                    <span class="block font-serif text-2xl tracking-[0.08em] font-bold text-[#1B382B] leading-none">
+            Kaushish PhysioTherapy
+          </span>
+                    <span class="block text-[10px] tracking-[0.25em] text-[#A37F2C] uppercase font-semibold mt-1">
+            & Rehabilitation Center
+          </span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-[#2C3831]">
+                <a href="#services" class="hover:text-[#A37F2C] transition-colors">Treatments</a>
+                <a href="#symptom-checker" class="hover:text-[#A37F2C] transition-colors flex items-center space-x-1">
+                    <span>Symptom Checker</span>
+                    <span class="text-[10px] bg-[#DFBF6D]/20 text-[#8F6C1E] px-1.5 py-0.5 rounded-full font-bold">Interactive</span>
+                </a>
+                <a href="#specialists" class="hover:text-[#A37F2C] transition-colors">Senior Clinicians</a>
+                <a href="#testimonials" class="hover:text-[#A37F2C] transition-colors">Patient Recoveries</a>
+                <a href="#faqs" class="hover:text-[#A37F2C] transition-colors">FAQ</a>
+            </nav>
+
+            <div>
+                <button onclick="scrollToId('booking')" class="px-6 py-2.5 rounded-full bg-[#1B382B] hover:bg-[#254435] text-[#FAF7F2] font-semibold text-xs tracking-wide shadow-md transition-all flex items-center space-x-2 border border-[#DFBF6D]/30">
+          <i data-lucide="calendar" class="w-4 h-4 text-[#DFBF6D]"></i>
+          <span>Book Evaluation</span>
+        </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32">
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-[#E0D5C1]/40 via-[#C29B38]/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-glow"></div>
+        <div class="absolute -top-20 -right-20 w-[450px] h-[450px] bg-[#2A483A]/10 rounded-full blur-3xl pointer-events-none -z-10 animate-float-slow"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+                <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-[#EFE9DD] border border-[#D5C9B8] text-[#1B382B] text-xs font-semibold tracking-wider uppercase">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#A37F2C]"></i>
+                        <span>World-Class Musculoskeletal & Spine Center</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-6xl xl:text-7xl font-bold tracking-tight text-[#14231B] leading-[1.08]">
+                        Precision Kinetic Healing. <br />
+                        <span class="italic font-light text-[#2A483A]">Restoring</span> Effortless <br />
+                        <span class="gold-accent-text">Movement.</span>
+                    </h1>
+
+                    <p class="text-base sm:text-xl text-[#3D4C44] max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+                        Moving beyond temporary adjustments. We combine computerized spinal decompression, Olympic-tier sports kinetic restoration, and 1-on-1 doctoral care to resolve chronic pain at its biological root.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <button onclick="scrollToId('booking')" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#1B382B] hover:bg-[#254435] text-[#FAF7F2] font-semibold text-sm tracking-wide shadow-xl flex items-center justify-center space-x-3 border border-[#DFBF6D]/30 group">
+              <span>Schedule Doctoral Evaluation</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-[#DFBF6D] transition-transform group-hover:translate-x-1"></i>
+            </button>
+                        <button onclick="openVideoModal()" class="w-full sm:w-auto px-6 py-4 rounded-full bg-white hover:bg-[#FDFBF7] text-[#1B382B] font-semibold text-sm border border-[#D6CCC0] shadow-sm flex items-center justify-center space-x-3">
+              <div class="w-7 h-7 rounded-full bg-[#1B382B] text-[#DFBF6D] flex items-center justify-center">
+                <i data-lucide="play" class="w-3 h-3 fill-current translate-x-0.5"></i>
+              </div>
+              <span>Patient Transformation (2 Min)</span>
+            </button>
+                    </div>
+
+                    <div class="pt-4 border-t border-[#E6DDD0] grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs font-medium text-[#46564E]">
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-[#A37F2C]"></i>
+                            <span>Strictly 1-on-1 Doctor Care</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-[#A37F2C]"></i>
+                            <span>Private Acoustic Suites</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-[#A37F2C]"></i>
+                            <span>Non-Invasive Protocols</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Hero Image & Animated Badges -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] group">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=85" alt="Therapy Suite" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#1B382B]/80 via-transparent to-black/20"></div>
+                            <div class="absolute bottom-6 left-6 right-6 text-white">
+                                <span class="text-[11px] uppercase tracking-widest text-[#DFBF6D] font-bold">Private Suite</span>
+                                <p class="font-serif text-2xl font-light text-white mt-1">Restorative medicine engineered for longevity.</p>
+                            </div>
+                        </div>
+
+                        <!-- Floating Card 1 -->
+                        <div class="absolute -top-6 -right-4 glass-panel p-4 rounded-2xl shadow-xl max-w-[240px] animate-float-slow hidden sm:block">
+                            <div class="flex items-center space-x-3 mb-2">
+                                <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800">
+                                    <i data-lucide="activity" class="w-4 h-4"></i>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] uppercase font-bold text-gray-500">Sciatica Protocol</span>
+                                    <p class="text-xs font-bold text-[#1B382B]">-92% Nerve Pain</p>
+                                </div>
+                            </div>
+                            <div class="w-full bg-[#E5DFD4] h-2 rounded-full overflow-hidden">
+                                <div class="bg-gradient-to-r from-emerald-600 to-[#C29B38] h-full w-[92%] rounded-full"></div>
+                            </div>
+                            <div class="flex justify-between items-center text-[10px] text-gray-500 mt-1 font-medium">
+                                <span>Resolved in 5 wks</span>
+                                <span class="text-emerald-700 font-bold">Verified</span>
+                            </div>
+                        </div>
+
+                        <!-- Floating Card 2 -->
+                        <div class="absolute -bottom-8 -left-4 glass-panel-dark p-4 rounded-2xl shadow-2xl max-w-[270px] text-white animate-float-reverse border border-[#DFBF6D]/40">
+                            <div class="flex items-center space-x-3">
+                                <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80" alt="Dr. Vance" class="w-11 h-11 rounded-full object-cover border-2 border-[#DFBF6D]" />
+                                <div>
+                                    <div class="flex items-center space-x-1 text-[#DFBF6D] text-xs">
+                                        <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                        <span class="font-bold">4.99</span>
+                                        <span class="text-white/60 text-[10px]">(384 reviews)</span>
+                                    </div>
+                                    <p class="text-xs font-semibold text-white">Dr. Alistair Vance, DPT</p>
+                                    <p class="text-[10px] text-[#DFBF6D] mt-0.5">● Next Slot: Today 3:30 PM</p>
+                                </div>
+                            </div>
+                            <button onclick="scrollToId('booking')" class="mt-3 w-full py-1.5 rounded-lg bg-[#DFBF6D] hover:bg-[#ebd494] text-[#1B382B] text-[11px] font-bold text-center transition-colors">
+                Quick Reserve Slot
+              </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Stats Ribbon -->
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 sm:-mt-10">
+        <div class="glass-panel rounded-3xl p-6 sm:p-8 shadow-2xl border border-[#DFBF6D]/30 bg-white/95">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[#E5DDD0]">
+                <div class="pt-4 sm:pt-0 sm:px-6 first:pt-0 first:px-0 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-2xl bg-[#1B382B] text-[#DFBF6D] flex items-center justify-center shrink-0">
+                        <i data-lucide="award" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-[#1B382B]">99.4%</div>
+                        <div class="text-xs font-bold text-[#2A483A] uppercase mt-1">Recovery Rate</div>
+                        <div class="text-[11px] text-[#697A72]">Targeted protocols</div>
+                    </div>
+                </div>
+                <div class="pt-4 sm:pt-0 sm:px-6 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-2xl bg-[#1B382B] text-[#DFBF6D] flex items-center justify-center shrink-0">
+                        <i data-lucide="heart-pulse" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-[#1B382B]">18,400+</div>
+                        <div class="text-xs font-bold text-[#2A483A] uppercase mt-1">Sessions Completed</div>
+                        <div class="text-[11px] text-[#697A72]">Non-invasive care</div>
+                    </div>
+                </div>
+                <div class="pt-4 sm:pt-0 sm:px-6 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-2xl bg-[#1B382B] text-[#DFBF6D] flex items-center justify-center shrink-0">
+                        <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-[#1B382B]">4.98 ★</div>
+                        <div class="text-xs font-bold text-[#2A483A] uppercase mt-1">Patient Rating</div>
+                        <div class="text-[11px] text-[#697A72]">1,200+ verified reviews</div>
+                    </div>
+                </div>
+                <div class="pt-4 sm:pt-0 sm:px-6 flex items-start space-x-4">
+                    <div class="w-10 h-10 rounded-2xl bg-[#1B382B] text-[#DFBF6D] flex items-center justify-center shrink-0">
+                        <i data-lucide="check-circle" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-[#1B382B]">12+</div>
+                        <div class="text-xs font-bold text-[#2A483A] uppercase mt-1">Doctor Specialists</div>
+                        <div class="text-[11px] text-[#697A72]">DPT & Board-Certified</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Symptom Checker -->
+    <section id="symptom-checker" class="py-24 bg-[#F5EFE6] relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-white border border-[#DFBF6D]/40 text-[#1B382B] text-xs font-semibold uppercase">
+                    <i data-lucide="activity" class="w-3.5 h-3.5 text-[#A37F2C]"></i>
+                    <span>Interactive Diagnostic Visualizer</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-[#14231B] tracking-tight">
+                    Where Does Your Body Feel Restricted?
+                </h2>
+                <p class="text-[#4E5E55] text-base">Select your pain region and intensity to preview your clinical roadmap.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                <div class="lg:col-span-5 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-widest text-[#2A483A] block px-1">Select Anatomical Zone:</span>
+
+                    <div id="zone-list" class="space-y-2.5">
+                        <!-- Dynamic Zone Buttons generated by JS -->
+                    </div>
+
+                    <div class="bg-white p-5 rounded-2xl border border-[#E3D9CC] mt-6 shadow-sm">
+                        <div class="flex items-center justify-between mb-2">
+                            <span class="text-xs font-bold uppercase tracking-wider text-[#1B382B] flex items-center space-x-1.5">
+                <i data-lucide="flame" class="w-4 h-4 text-amber-600"></i>
+                <span>Reported Pain Intensity</span>
+                            </span>
+                            <span id="pain-val-display" class="text-sm font-bold text-[#1B382B] bg-[#F5EFE6] px-2.5 py-0.5 rounded-full border border-[#DFBF6D]/30">6 / 10</span>
+                        </div>
+                        <input id="pain-slider" type="range" min="1" max="10" value="6" oninput="updatePainLevel(this.value)" class="w-full accent-[#1B382B] cursor-pointer h-2 bg-[#E6DDD0] rounded-lg" />
+                        <div class="flex justify-between text-[11px] text-gray-400 font-semibold mt-1">
+                            <span>1 - Mild Ache</span>
+                            <span>5 - Moderate</span>
+                            <span>10 - Severe Sharp</span>
+                        </div>
+                        <div id="pain-feedback" class="mt-3 p-3 rounded-xl border text-xs leading-relaxed text-amber-800 bg-amber-50 border-amber-200">
+                            <p class="font-bold">Moderate Functional Restriction</p>
+                            <p class="mt-0.5 opacity-90">Biomechanics are compensating. Immediate joint decompression and manual stabilization recommended.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7">
+                    <div class="glass-panel p-6 sm:p-8 rounded-3xl shadow-xl border border-[#DFBF6D]/40 bg-white/95">
+                        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[#EAE3D6] pb-4 mb-6">
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-widest text-[#A37F2C]">Recommended Clinical Roadmap</span>
+                                <h3 id="recom-title" class="font-serif text-2xl sm:text-3xl font-bold text-[#1B382B] mt-1">Spinal Decompression & Posture Architecture</h3>
+                            </div>
+                            <span id="recom-timeline" class="px-3 py-1 rounded-full text-xs font-bold bg-[#1B382B] text-[#DFBF6D]">4 to 6 weeks Expected</span>
+                        </div>
+
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500">Primary Symptoms Addressed:</h4>
+                                <p id="recom-complaints" class="text-sm text-[#2C3831] font-medium mt-1 italic bg-[#FAF7F2] p-3 rounded-xl border border-[#EBE4D8]">
+                                    "Sharp electric shooting down the leg, morning stiffness, difficulty standing straight."
+                                </p>
+                            </div>
+
+                            <div>
+                                <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Evidence-Based Techniques Used:</h4>
+                                <div id="recom-techniques" class="flex flex-wrap gap-2">
+                                    <span class="text-xs font-medium px-3 py-1 rounded-full bg-[#EAE4D8] text-[#1B382B]">✓ Axial Decompression</span>
+                                    <span class="text-xs font-medium px-3 py-1 rounded-full bg-[#EAE4D8] text-[#1B382B]">✓ Maitland Joint Mobilization</span>
+                                    <span class="text-xs font-medium px-3 py-1 rounded-full bg-[#EAE4D8] text-[#1B382B]">✓ McKenzie Protocol</span>
+                                </div>
+                            </div>
+
+                            <div class="bg-[#FAF7F2] p-4 rounded-2xl border border-[#DFBF6D]/30 flex items-center justify-between mt-4">
+                                <div class="flex items-center space-x-3">
+                                    <img id="recom-doctor-avatar" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Doctor" class="w-12 h-12 rounded-full object-cover border-2 border-[#1B382B]" />
+                                    <div>
+                                        <span class="text-[10px] uppercase font-bold text-[#A37F2C] tracking-wider">Assigned Lead Clinician</span>
+                                        <p id="recom-doctor-name" class="text-sm font-bold text-[#1B382B] leading-tight">Dr. Muskan, Physiotherapist</p>
+                                        <p class="text-xs text-gray-600">Clinical Director & Spine Specialist</p>
+                                    </div>
+                                </div>
+                                <span class="hidden sm:inline-block text-xs font-bold text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">Accepting Patients</span>
+                            </div>
+
+                            <div class="pt-4">
+                                <button onclick="scrollToId('booking')" class="w-full py-4 rounded-full bg-[#1B382B] hover:bg-[#254435] text-[#FAF7F2] font-semibold text-base shadow-lg flex items-center justify-center space-x-3 transition-all border border-[#DFBF6D]/40">
+                  <span>Reserve Initial Assessment Session</span>
+                  <i data-lucide="arrow-right" class="w-5 h-5 text-[#DFBF6D]"></i>
+                </button>
+                                <p class="text-center text-xs text-gray-500 mt-2">Includes 75-min doctoral physical examination & same-day manual relief.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive 4-Step Booking Wizard -->
+    <section id="booking" class="py-24 bg-[#FAF7F2] relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                <span class="text-xs font-bold uppercase tracking-widest text-[#A37F2C] block">Priority Concierge Reservation</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-[#14231B] tracking-tight">Schedule Your Clinical Evaluation</h2>
+                <p class="text-[#4E5E55] text-base">Select your service, physician, date, and intake details below.</p>
+            </div>
+
+            <!-- Step Progress Header -->
+            <div class="flex items-center justify-center space-x-6 sm:space-x-12 mb-10 text-xs font-bold">
+                <div id="step-tab-1" class="flex items-center space-x-2 text-[#1B382B]">
+                    <span class="w-7 h-7 rounded-full bg-[#1B382B] text-white flex items-center justify-center">1</span>
+                    <span>Protocol & Doctor</span>
+                </div>
+                <div id="step-tab-2" class="flex items-center space-x-2 text-gray-400">
+                    <span class="w-7 h-7 rounded-full bg-white border border-gray-300 text-gray-500 flex items-center justify-center">2</span>
+                    <span>Date & Time</span>
+                </div>
+                <div id="step-tab-3" class="flex items-center space-x-2 text-gray-400">
+                    <span class="w-7 h-7 rounded-full bg-white border border-gray-300 text-gray-500 flex items-center justify-center">3</span>
+                    <span>Intake Profile</span>
+                </div>
+                <div id="step-tab-4" class="flex items-center space-x-2 text-gray-400">
+                    <span class="w-7 h-7 rounded-full bg-white border border-gray-300 text-gray-500 flex items-center justify-center">4</span>
+                    <span>Pass</span>
+                </div>
+            </div>
+
+            <!-- Wizard Card Container -->
+            <div class="glass-panel rounded-3xl p-6 sm:p-10 shadow-2xl border border-[#DFBF6D]/40 bg-white/95">
+
+                <!-- Step 1 Pane -->
+                <div id="wizard-step-1" class="space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-[#1B382B]">1. Select Clinical Service & Setting</h3>
+
+                    <div>
+                        <label class="text-xs font-bold uppercase text-[#2A483A] block mb-2">Service Setting:</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="p-3.5 rounded-2xl border border-[#1B382B] bg-[#FAF7F2] flex items-center space-x-2 cursor-pointer">
+                <input type="radio" name="venue" checked class="accent-[#1B382B]" />
+                <span class="text-xs font-bold text-[#1B382B]">Penthouse Suite (Beverly Hills)</span>
+              </label>
+                            <label class="p-3.5 rounded-2xl border border-[#E3D9CC] bg-white flex items-center space-x-2 cursor-pointer">
+                <input type="radio" name="venue" class="accent-[#1B382B]" />
+                <span class="text-xs font-bold text-[#1B382B]">At-Home Concierge (+ $75)</span>
+              </label>
+                            <label class="p-3.5 rounded-2xl border border-[#E3D9CC] bg-white flex items-center space-x-2 cursor-pointer">
+                <input type="radio" name="venue" class="accent-[#1B382B]" />
+                <span class="text-xs font-bold text-[#1B382B]">HD Telehealth (Save $20)</span>
+              </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-xs font-bold uppercase text-[#2A483A] block mb-2">Target Protocol:</label>
+                        <select id="wizard-service" class="w-full p-3 rounded-xl border border-[#DDD4C7] bg-white text-sm font-semibold text-[#1B382B] focus:ring-2 focus:ring-[#1B382B] outline-none">
+              <option value="Spinal Decompression & Posture Architecture (60 mins - $165)">Spinal Decompression & Posture Architecture (60 mins - $165)</option>
+              <option value="High-Performance Sports Kinetics & ACL Return (60 mins - $180)">High-Performance Sports Kinetics & ACL Return (60 mins - $180)</option>
+              <option value="Precision Trigger Point Dry Needling & Fascia (45 mins - $145)">Precision Trigger Point Dry Needling & Fascia (45 mins - $145)</option>
+              <option value="Post-Surgical Joint & Ligament Restoration (75 mins - $195)">Post-Surgical Joint & Ligament Restoration (75 mins - $195)</option>
+              <option value="Executive Ergonomic & Postural Rebalancing (50 mins - $155)">Executive Ergonomic & Postural Rebalancing (50 mins - $155)</option>
+              <option value="Pelvic Floor & Lumbopelvic Stabilization (60 mins - $170)">Pelvic Floor & Lumbopelvic Stabilization (60 mins - $170)</option>
+            </select>
+                    </div>
+
+                    <div>
+                        <label class="text-xs font-bold uppercase text-[#2A483A] block mb-2">Select Attending Specialist:</label>
+                        <select id="wizard-doctor" class="w-full p-3 rounded-xl border border-[#DDD4C7] bg-white text-sm font-semibold text-[#1B382B] focus:ring-2 focus:ring-[#1B382B] outline-none">
+              <option value="Dr. Alistair Vance, DPT, OCS (Clinical Director & Spine)">Dr. Muskan (Clinical Director & Spine)</option>
+              <option value="Dr. Vivienne Chen, DPT, SCS (Sports & ACL Fellow)">Dr. Muskan, DPT, (Sports & ACL Fellow)</option>
+            </select>
+                    </div>
+
+                    <div class="flex justify-end pt-4 border-t border-[#EAE3D6]">
+                        <button onclick="goToStep(2)" class="px-8 py-3.5 rounded-full bg-[#1B382B] hover:bg-[#254435] text-white text-xs font-bold flex items-center space-x-2">
+              <span>Continue to Date & Time</span>
+              <i data-lucide="chevron-right" class="w-4 h-4 text-[#DFBF6D]"></i>
+            </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 Pane -->
+                <div id="wizard-step-2" class="space-y-6 hidden">
+                    <h3 class="font-serif text-2xl font-bold text-[#1B382B]">2. Select Appointment Date & Time</h3>
+
+                    <div>
+                        <label class="text-xs font-bold uppercase text-[#2A483A] block mb-2">Preferred Date:</label>
+                        <div id="date-cards-container" class="grid grid-cols-3 sm:grid-cols-7 gap-2">
+                            <!-- Dynamically populated dates -->
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-xs font-bold uppercase text-[#2A483A] block mb-2">Available Time Slots:</label>
+                        <div id="slots-container" class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                            <button onclick="selectSlot(this)" class="slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#1B382B] bg-[#1B382B] text-[#DFBF6D]">09:15 AM</button>
+                            <button onclick="selectSlot(this)" class="slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#E3D9CC] bg-white hover:border-[#C29B38]">10:30 AM</button>
+                            <button onclick="selectSlot(this)" class="slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#E3D9CC] bg-white hover:border-[#C29B38]">01:00 PM</button>
+                            <button onclick="selectSlot(this)" class="slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#E3D9CC] bg-white hover:border-[#C29B38]">02:15 PM</button>
+                            <button onclick="selectSlot(this)" class="slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#E3D9CC] bg-white hover:border-[#C29B38]">03:30 PM</button>
+                            <button onclick="selectSlot(this)" class="slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#E3D9CC] bg-white hover:border-[#C29B38]">04:45 PM</button>
+                            <button onclick="selectSlot(this)" class="slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#E3D9CC] bg-white hover:border-[#C29B38]">05:45 PM</button>
+                            <button onclick="selectSlot(this)" class="slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#E3D9CC] bg-white hover:border-[#C29B38]">06:30 PM</button>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-4 border-t border-[#EAE3D6]">
+                        <button onclick="goToStep(1)" class="px-6 py-2.5 rounded-full border border-gray-300 text-xs font-bold">Back</button>
+                        <button onclick="goToStep(3)" class="px-8 py-3.5 rounded-full bg-[#1B382B] hover:bg-[#254435] text-white text-xs font-bold flex items-center space-x-2">
+              <span>Continue to Intake Profile</span>
+              <i data-lucide="chevron-right" class="w-4 h-4 text-[#DFBF6D]"></i>
+            </button>
+                    </div>
+                </div>
+
+                <!-- Step 3 Pane -->
+                <div id="wizard-step-3" class="space-y-4 hidden">
+                    <h3 class="font-serif text-2xl font-bold text-[#1B382B]">3. Patient Information & Symptom Intake</h3>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="text-xs font-bold text-[#1B382B] block mb-1">First Name *</label>
+                            <input id="input-fname" type="text" placeholder="e.g. Julian" class="w-full px-3.5 py-2.5 rounded-xl border border-[#DDD4C7] text-xs bg-white focus:ring-2 focus:ring-[#1B382B] outline-none" />
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-[#1B382B] block mb-1">Last Name *</label>
+                            <input id="input-lname" type="text" placeholder="e.g. Mercer" class="w-full px-3.5 py-2.5 rounded-xl border border-[#DDD4C7] text-xs bg-white focus:ring-2 focus:ring-[#1B382B] outline-none" />
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-[#1B382B] block mb-1">Email Address *</label>
+                            <input id="input-email" type="email" placeholder="julian.mercer@gmail.com" class="w-full px-3.5 py-2.5 rounded-xl border border-[#DDD4C7] text-xs bg-white focus:ring-2 focus:ring-[#1B382B] outline-none" />
+                        </div>
+                        <div>
+                            <label class="text-xs font-bold text-[#1B382B] block mb-1">Mobile Phone *</label>
+                            <input id="input-phone" type="tel" placeholder="+1 (310) 555-0192" class="w-full px-3.5 py-2.5 rounded-xl border border-[#DDD4C7] text-xs bg-white focus:ring-2 focus:ring-[#1B382B] outline-none" />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="text-xs font-bold text-[#1B382B] block mb-1">Describe Movement Restrictions or Pain Triggers</label>
+                        <textarea id="input-desc" rows="2" placeholder="e.g. Sharp pain when turning head or standing for >20 mins" class="w-full px-3.5 py-2 rounded-xl border border-[#DDD4C7] text-xs bg-white focus:ring-2 focus:ring-[#1B382B] outline-none"></textarea>
+                    </div>
+
+                    <div class="flex justify-between items-center pt-4 border-t border-[#EAE3D6]">
+                        <button onclick="goToStep(2)" class="px-6 py-2.5 rounded-full border border-gray-300 text-xs font-bold">Back</button>
+                        <button onclick="submitBooking()" class="px-8 py-3.5 rounded-full bg-[#1B382B] hover:bg-[#254435] text-white text-xs font-bold flex items-center space-x-2 shadow-lg">
+              <span>Confirm Priority Booking</span>
+              <i data-lucide="check-circle-2" class="w-4 h-4 text-[#DFBF6D]"></i>
+            </button>
+                    </div>
+                </div>
+
+                <!-- Step 4 Pane: Digital Boarding Pass -->
+                <div id="wizard-step-4" class="space-y-6 hidden">
+                    <div class="text-center space-y-2">
+                        <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-800 mx-auto flex items-center justify-center">
+                            <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+                        </div>
+                        <h3 class="font-serif text-3xl font-bold text-[#1B382B]">Appointment Confirmed</h3>
+                        <p class="text-xs text-gray-600">VIP Clinical Pass has been generated. Confirmation sent to your email.</p>
+                    </div>
+
+                    <!-- Boarding Pass -->
+                    <div class="max-w-xl mx-auto rounded-3xl overflow-hidden border-2 border-[#DFBF6D]/60 shadow-2xl bg-gradient-to-b from-[#1B382B] to-[#254435] text-white">
+                        <div class="p-6 border-b border-white/15 flex items-center justify-between">
+                            <div>
+                                <span class="text-[10px] uppercase tracking-widest text-[#DFBF6D] font-bold block">VIP Clinical Access Pass</span>
+                                <span class="font-serif text-xl font-bold tracking-wider">ÉLAN PHYSIO SANCTUARY</span>
+                            </div>
+                            <div class="text-right">
+                                <span class="text-[10px] text-white/60 block">Reference ID</span>
+                                <span id="pass-ref" class="font-mono text-xs font-bold text-[#DFBF6D] bg-white/10 px-2 py-0.5 rounded">ELAN-849201</span>
+                            </div>
+                        </div>
+
+                        <div class="p-6 space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <span class="text-[10px] uppercase text-white/60 block">Patient Name</span>
+                                    <p id="pass-name" class="text-sm font-bold text-white mt-0.5">Julian Mercer</p>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] uppercase text-white/60 block">Doctor of Physical Therapy</span>
+                                    <p id="pass-doctor" class="text-sm font-bold text-[#DFBF6D] mt-0.5">Dr. Muskan, DPT</p>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-2 gap-4 pt-2 border-t border-white/10">
+                                <div>
+                                    <span class="text-[10px] uppercase text-white/60 block">Date & Time</span>
+                                    <p id="pass-time" class="text-sm font-bold text-white mt-0.5">Tomorrow • 09:15 AM</p>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] uppercase text-white/60 block">Location</span>
+                                    <p class="text-xs font-bold text-white mt-0.5">Meerut</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-black/30 p-4 border-t border-dashed border-white/20 flex items-center justify-between">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center font-mono text-[9px] text-[#1B382B] font-bold">
+                                    PASS
+                                </div>
+                                <div class="text-[10px] text-white/70">
+                                    <p class="font-semibold text-white">Present at Concierge Desk</p>
+                                    <p>Valet parking included</p>
+                                </div>
+                            </div>
+                            <button onclick="downloadICS()" class="px-3.5 py-1.5 rounded-xl bg-[#DFBF6D] text-[#1B382B] text-xs font-bold flex items-center space-x-1">
+                <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                <span>Download .ics</span>
+              </button>
+                        </div>
+                    </div>
+
+                    <div class="text-center pt-2">
+                        <button onclick="goToStep(1)" class="px-6 py-2.5 rounded-full border border-gray-300 text-xs font-bold hover:bg-gray-100">
+              Book Another Appointment
+            </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-[#FAF7F2] relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+                <div class="space-y-3 max-w-2xl">
+                    <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-[#EAE2D5] text-[#1B382B] text-xs font-semibold uppercase">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-[#A37F2C]"></i>
+                        <span>Verified Patient Recoveries</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-[#14231B] tracking-tight">
+                        Real Clinical Transformations. <br />
+                        <span class="italic font-light text-[#2A483A]">Documented</span> In Movement.
+                    </h2>
+                    <p class="text-[#4E5E55] text-base">
+                        Explore how targeted doctoral care restored quality of life for our patients—without surgery or chronic pain medications.
+                    </p>
+                </div>
+
+                <div class="mt-4 md:mt-0">
+                    <button onclick="openReviewModal()" class="px-5 py-2.5 rounded-full bg-white hover:bg-[#1B382B] text-[#1B382B] hover:text-white border border-[#DFBF6D]/40 text-xs font-bold transition-all shadow-sm flex items-center space-x-2">
+            <i data-lucide="message-square-plus" class="w-4 h-4 text-[#A37F2C]"></i>
+            <span>Submit Your Story</span>
+          </button>
+                </div>
+            </div>
+
+            <!-- Testimonial Featured Carousel Card -->
+            <div class="glass-panel rounded-3xl p-6 sm:p-10 shadow-2xl border border-[#DFBF6D]/40 bg-white/95 relative">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+                    <div class="lg:col-span-4 space-y-5">
+                        <div class="flex items-center space-x-4">
+                            <img id="test-avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80" alt="Patient" class="w-20 h-20 rounded-2xl object-cover border-2 border-[#1B382B] shadow-md" />
+                            <div>
+                                <h3 id="test-name" class="font-serif text-2xl font-bold text-[#1B382B]">Evelyn Montgomery</h3>
+                                <p id="test-title" class="text-xs text-[#2A483A] font-semibold">Classical Concert Pianist</p>
+                                <div class="flex items-center space-x-1 mt-1 text-[#C29B38]">
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                                    <span class="text-xs font-bold text-[#1B382B] ml-1">5.0</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-[#FAF7F2] p-3.5 rounded-2xl border border-[#E8DFC8]">
+                            <span class="text-[10px] uppercase font-bold text-[#A37F2C] tracking-wider block">Clinical Condition</span>
+                            <p id="test-condition" class="text-xs font-bold text-[#1B382B] mt-0.5">Lumbar Herniation L4-L5 & Sciatica</p>
+                            <p id="test-therapist" class="text-[11px] text-gray-500 mt-1">Care led by Dr. Alistair Vance, DPT</p>
+                        </div>
+
+                        <div class="bg-[#1B382B] text-white p-4 rounded-2xl space-y-2 border border-[#DFBF6D]/30">
+                            <div class="flex justify-between text-[10px] text-[#DFBF6D] font-bold uppercase">
+                                <span>Milestone Metrics</span>
+                                <span id="test-duration">6 Weeks Protocol</span>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 text-center text-xs">
+                                <div class="bg-white/5 p-2 rounded-xl">
+                                    <span class="text-[10px] text-white/60 block">Pain Reduction</span>
+                                    <p id="test-pain" class="font-bold text-emerald-400">9/10 ➔ 0/10</p>
+                                </div>
+                                <div class="bg-white/5 p-2 rounded-xl">
+                                    <span class="text-[10px] text-white/60 block">Mobility Gain</span>
+                                    <p id="test-mobility" class="font-bold text-[#DFBF6D]">+92% Range</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-8 space-y-6 flex flex-col justify-between">
+                        <blockquote id="test-quote" class="font-serif text-xl sm:text-2xl font-light text-[#1B382B] leading-relaxed italic">
+                            "I was scheduled for microdiscectomy surgery after 18 months of debilitating sciatica that left me unable to sit at my piano. Dr. Vance’s decompression protocol and hands-on realignment completely turned my life around. By week 4, the nerve pain vanished.
+                            I just played my first solo recital, completely pain-free."
+                        </blockquote>
+
+                        <div class="pt-6 border-t border-[#EAE3D6] flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <button onclick="changeTestimonial(0)" class="test-dot w-8 h-2 rounded-full bg-[#1B382B]"></button>
+                                <button onclick="changeTestimonial(1)" class="test-dot w-2 h-2 rounded-full bg-gray-300"></button>
+                                <button onclick="changeTestimonial(2)" class="test-dot w-2 h-2 rounded-full bg-gray-300"></button>
+                            </div>
+
+                            <div class="flex items-center space-x-2">
+                                <button onclick="prevTestimonial()" class="w-10 h-10 rounded-full bg-white hover:bg-[#1B382B] hover:text-white border border-[#DDD3C4] flex items-center justify-center transition-colors">
+                  <i data-lucide="chevron-left" class="w-4 h-4"></i>
+                </button>
+                                <button onclick="nextTestimonial()" class="w-10 h-10 rounded-full bg-white hover:bg-[#1B382B] hover:text-white border border-[#DDD3C4] flex items-center justify-center transition-colors">
+                  <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden">
+        <div class="bg-[#1B382B] rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl border border-[#DFBF6D]/40 text-white relative">
+            <button onclick="closeVideoModal()" class="absolute top-4 right-4 z-20 p-2 rounded-full bg-black/50 text-white">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+            <div class="relative aspect-video bg-black flex items-center justify-center">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=80" alt="Video" class="w-full h-full object-cover opacity-60" />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#1B382B] via-transparent to-black/60"></div>
+                <div class="w-14 h-14 rounded-full bg-[#DFBF6D] text-[#1B382B] flex items-center justify-center shadow-xl">
+                    <i data-lucide="play" class="w-6 h-6 fill-current translate-x-0.5"></i>
+                </div>
+            </div>
+
+            <div class="p-6 space-y-2">
+                <span class="text-xs uppercase text-[#DFBF6D] font-bold">Case Study Video</span>
+                <h4 class="font-serif text-2xl font-bold">Evelyn Montgomery: Non-Surgical Spinal Recovery</h4>
+                <p class="text-xs text-white/80">Follow Evelyn's 6-week progression using computerized axial decompression and kinetic core stabilizing.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Submission Modal -->
+    <div id="review-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm hidden">
+        <div class="bg-[#FAF7F2] rounded-3xl max-w-lg w-full p-6 shadow-2xl border border-[#DFBF6D]/40 relative">
+            <button onclick="closeReviewModal()" class="absolute top-4 right-4 p-2 rounded-full hover:bg-gray-200">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+            <h3 class="font-serif text-2xl font-bold text-[#1B382B]">Share Your Recovery Journey</h3>
+            <p class="text-xs text-gray-500 mb-4">Inspire other patients with your results.</p>
+
+            <form onsubmit="handleReviewSubmit(event)" class="space-y-3">
+                <div>
+                    <label class="text-xs font-bold text-[#1B382B] block mb-1">Full Name</label>
+                    <input id="rev-name" type="text" required placeholder="e.g. Katherine Hayes" class="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white" />
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-[#1B382B] block mb-1">Condition Treated</label>
+                    <input id="rev-condition" type="text" required placeholder="e.g. Cervical Disc & Migraines" class="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white" />
+                </div>
+                <div>
+                    <label class="text-xs font-bold text-[#1B382B] block mb-1">Your Story & Results</label>
+                    <textarea id="rev-quote" rows="3" required placeholder="Describe your pain reduction and mobility gains..." class="w-full p-2.5 rounded-xl border border-gray-300 text-xs bg-white"></textarea>
+                </div>
+                <div class="flex justify-end space-x-2 pt-2">
+                    <button type="button" onclick="closeReviewModal()" class="px-4 py-2 rounded-full border border-gray-300 text-xs font-bold">Cancel</button>
+                    <button type="submit" class="px-6 py-2 rounded-full bg-[#1B382B] text-white text-xs font-bold">Submit Story</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-[#14231B] text-[#E6E1D8] pt-16 pb-12 border-t border-[#2A483A]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-6">
+            <div>
+                <span class="font-serif text-2xl font-bold tracking-wider text-white">KAUSHISH PHYSIO <br>& REHABILITATION CENTER</span>
+
+                <p class="text-xs text-[#B2C0B7] mt-1">E.K. Road, Near Sainik board, Meerut</p>
+            </div>
+            <div class="text-xs text-[#86998E]">
+                © 2026 Kaushish Physio & Rehabilitation Center. Strictly 1-on-1 Doctor Care.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Data for Zones
+        const ZONES = [{
+            id: 'lumbar',
+            title: 'Lower Back & Sciatica',
+            subtitle: 'Lumbar L3-S1 & Gluteal',
+            complaints: 'Sharp electric shooting down the leg, morning stiffness, difficulty standing straight.',
+            techniques: ['Axial Decompression', 'Maitland Joint Mobilization', 'McKenzie Protocol'],
+            timeline: '4 to 6 weeks Expected',
+            docName: 'Dr. Alistair Vance, DPT, OCS',
+            avatar: 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80',
+            serviceTitle: 'Spinal Decompression & Posture Architecture'
+        }, {
+            id: 'cervical',
+            title: 'Neck & Upper Spine',
+            subtitle: 'Cervical & Upper Trapezius',
+            complaints: 'Stabbing pinch when turning head, radiating arm tingling, tension behind temples.',
+            techniques: ['Precision Dry Needling', 'Suboccipital Release', 'Postural Alignment'],
+            timeline: '2 to 4 weeks Expected',
+            docName: 'Dr. Sophia Moreau, DPT, CMPT',
+            avatar: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80',
+            serviceTitle: 'Precision Trigger Point Dry Needling & Fascia'
+        }, {
+            id: 'knee',
+            title: 'Knee & Ligaments',
+            subtitle: 'Patella, Meniscus & ACL',
+            complaints: 'Instability going down stairs, deep joint swelling, snapping sensation during pivots.',
+            techniques: ['Force Vector Loading', 'Neuromuscular Re-education', 'Plyometrics'],
+            timeline: '6 to 8 weeks Expected',
+            docName: 'Dr. Vivienne Chen, DPT, SCS',
+            avatar: 'https://images.unsplash.com/photo-1594824813506-6962f9be7b65?auto=format&fit=crop&w=600&q=80',
+            serviceTitle: 'High-Performance Sports Kinetics & ACL Return'
+        }, {
+            id: 'shoulder',
+            title: 'Shoulder & Rotator Cuff',
+            subtitle: 'Glenohumeral & Scapula',
+            complaints: 'Inability to sleep on side, pain reaching overhead, clicking and weakness when lifting.',
+            techniques: ['Fascial Shearing', 'Scapulothoracic Rhythm', 'Dry Needling'],
+            timeline: '3 to 6 weeks Expected',
+            docName: 'Dr. Sophia Moreau, DPT, CMPT',
+            avatar: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80',
+            serviceTitle: 'Precision Trigger Point Dry Needling & Fascia'
+        }];
+
+        let currentZoneId = 'lumbar';
+
+        // Populate Zone Buttons
+        const zoneListContainer = document.getElementById('zone-list');
+
+        function renderZones() {
+            zoneListContainer.innerHTML = '';
+            ZONES.forEach(zone => {
+                const isSelected = zone.id === currentZoneId;
+                const btn = document.createElement('button');
+                btn.className = `w-full text-left p-4 rounded-2xl transition-all flex items-center justify-between border ${
+          isSelected 
+            ? 'bg-[#1B382B] text-[#FAF7F2] border-[#1B382B] shadow-lg translate-x-1' 
+            : 'bg-white hover:bg-[#FDFBF7] text-[#1E2421] border-[#E3D9CC]'
+        }`;
+                btn.onclick = () => selectZone(zone.id);
+                btn.innerHTML = `
+          <div>
+            <p class="font-serif text-lg font-bold ${isSelected ? 'text-[#DFBF6D]' : 'text-[#1B382B]'}">${zone.title}</p>
+            <p class="text-xs ${isSelected ? 'text-gray-300' : 'text-gray-500'}">${zone.subtitle}</p>
+          </div>
+          <span class="text-xs ${isSelected ? 'text-[#DFBF6D]' : 'text-gray-400'}">➔</span>
+        `;
+                zoneListContainer.appendChild(btn);
+            });
+        }
+
+        function selectZone(id) {
+            currentZoneId = id;
+            renderZones();
+            const zone = ZONES.find(z => z.id === id);
+            if (!zone) return;
+
+            document.getElementById('recom-title').innerText = zone.serviceTitle;
+            document.getElementById('recom-timeline').innerText = zone.timeline;
+            document.getElementById('recom-complaints').innerText = `"${zone.complaints}"`;
+            document.getElementById('recom-doctor-name').innerText = zone.docName;
+            document.getElementById('recom-doctor-avatar').src = zone.avatar;
+
+            const techContainer = document.getElementById('recom-techniques');
+            techContainer.innerHTML = zone.techniques.map(t => `<span class="text-xs font-medium px-3 py-1 rounded-full bg-[#EAE4D8] text-[#1B382B]">✓ ${t}</span>`).join('');
+        }
+
+        renderZones();
+
+        function updatePainLevel(val) {
+            document.getElementById('pain-val-display').innerText = `${val} / 10`;
+            const fb = document.getElementById('pain-feedback');
+            if (val <= 3) {
+                fb.className = "mt-3 p-3 rounded-xl border text-xs text-emerald-800 bg-emerald-50 border-emerald-200";
+                fb.innerHTML = "<p class='font-bold'>Mild / Intermittent Discomfort</p><p class='mt-0.5'>Ideal for early preventive intervention before tissue inflammation solidifies.</p>";
+            } else if (val <= 6) {
+                fb.className = "mt-3 p-3 rounded-xl border text-xs text-amber-800 bg-amber-50 border-amber-200";
+                fb.innerHTML = "<p class='font-bold'>Moderate Functional Restriction</p><p class='mt-0.5'>Biomechanics are compensating. Immediate joint decompression and manual stabilization recommended.</p>";
+            } else {
+                fb.className = "mt-3 p-3 rounded-xl border text-xs text-rose-800 bg-rose-50 border-rose-200";
+                fb.innerHTML = "<p class='font-bold'>Acute / Severe Radiating Pain</p><p class='mt-0.5'>High nerve or disc sensitivity. Priority doctoral evaluation and non-invasive pain modulation required.</p>";
+            }
+        }
+
+        // Populate 7 upcoming dates
+        const dateContainer = document.getElementById('date-cards-container');
+        let chosenDate = "";
+        for (let i = 1; i <= 7; i++) {
+            const d = new Date();
+            d.setDate(d.getDate() + i);
+            const dayName = d.toLocaleDateString('en-US', {
+                weekday: 'short'
+            });
+            const dayNum = d.getDate();
+            const month = d.toLocaleDateString('en-US', {
+                month: 'short'
+            });
+            const full = d.toISOString().split('T')[0];
+            if (i === 1) chosenDate = full;
+
+            const btn = document.createElement('button');
+            btn.className = `date-card p-3 rounded-2xl text-center border transition-all ${i === 1 ? 'bg-[#1B382B] text-white border-[#1B382B]' : 'bg-white border-[#E3D9CC]'}`;
+            btn.onclick = () => {
+                document.querySelectorAll('.date-card').forEach(c => c.className = 'date-card p-3 rounded-2xl text-center border transition-all bg-white border-[#E3D9CC]');
+                btn.className = 'date-card p-3 rounded-2xl text-center border transition-all bg-[#1B382B] text-white border-[#1B382B]';
+                chosenDate = full;
+            };
+            btn.innerHTML = `
+        <span class="text-[10px] uppercase font-bold block opacity-75">${dayName}</span>
+        <span class="font-serif text-2xl font-bold block my-0.5">${dayNum}</span>
+        <span class="text-[10px] block opacity-75">${month}</span>
+      `;
+            dateContainer.appendChild(btn);
+        }
+
+        // Wizard Step Navigation
+        let currentStep = 1;
+
+        function goToStep(s) {
+            currentStep = s;
+            for (let i = 1; i <= 4; i++) {
+                document.getElementById(`wizard-step-${i}`).classList.add('hidden');
+                const tab = document.getElementById(`step-tab-${i}`);
+                if (tab) {
+                    if (i <= s) {
+                        tab.className = "flex items-center space-x-2 text-[#1B382B]";
+                        tab.querySelector('span').className = "w-7 h-7 rounded-full bg-[#1B382B] text-white flex items-center justify-center";
+                    } else {
+                        tab.className = "flex items-center space-x-2 text-gray-400";
+                        tab.querySelector('span').className = "w-7 h-7 rounded-full bg-white border border-gray-300 text-gray-500 flex items-center justify-center";
+                    }
+                }
+            }
+            document.getElementById(`wizard-step-${s}`).classList.remove('hidden');
+        }
+
+        function selectSlot(btn) {
+            document.querySelectorAll('.slot-btn').forEach(b => {
+                b.className = 'slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#E3D9CC] bg-white hover:border-[#C29B38]';
+            });
+            btn.className = 'slot-btn py-2.5 px-3 rounded-xl text-xs font-bold border border-[#1B382B] bg-[#1B382B] text-[#DFBF6D]';
+        }
+
+        function submitBooking() {
+            const fname = document.getElementById('input-fname').value.trim() || 'Valued';
+            const lname = document.getElementById('input-lname').value.trim() || 'Patient';
+            const doc = document.getElementById('wizard-doctor').value.split('(')[0];
+            const ref = `ELAN-${Math.floor(100000 + Math.random() * 900000)}`;
+
+            document.getElementById('pass-name').innerText = `${fname} ${lname}`;
+            document.getElementById('pass-doctor').innerText = doc;
+            document.getElementById('pass-ref').innerText = ref;
+
+            goToStep(4);
+            try {
+                confetti({
+                    particleCount: 80,
+                    spread: 70,
+                    origin: {
+                        y: 0.6
+                    },
+                    colors: ['#1B382B', '#C29B38', '#DFBF6D']
+                });
+            } catch (e) {}
+        }
+
+        function downloadICS() {
+            const content = `BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nSUMMARY:Physical Therapy Evaluation - Élan Physio\nLOCATION:Beverly Hills Penthouse Suite\nSTATUS:CONFIRMED\nEND:VEVENT\nEND:VCALENDAR`;
+            const blob = new Blob([content], {
+                type: 'text/calendar;charset=utf-8'
+            });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.setAttribute('download', 'Elan-Physio-Appointment.ics');
+            link.click();
+        }
+
+        // Testimonials Carousel Data
+        const TESTIMONIALS = [{
+            name: "Evelyn Montgomery",
+            title: "Classical Concert Pianist",
+            condition: "Lumbar Herniation L4-L5 & Sciatica",
+            therapist: "Dr. Alistair Vance, DPT",
+            avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+            quote: "I was scheduled for microdiscectomy surgery after 18 months of debilitating sciatica that left me unable to sit at my piano. Dr. Vance’s decompression protocol and hands-on realignment completely turned my life around. By week 4, the nerve pain vanished. I just played my first solo recital, completely pain-free.",
+            pain: "9/10 ➔ 0/10",
+            mobility: "+92% Range",
+            duration: "6 Weeks Protocol"
+        }, {
+            name: "Marcus Sterling",
+            title: "Marathon Runner & Tech Founder",
+            condition: "Post-Op ACL & Patellar Tendinopathy",
+            therapist: "Dr. Vivienne Chen, DPT",
+            avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+            quote: "My surgeon told me returning to sub-3-hour marathons would take 18 months. Dr. Chen used 3D motion tracking and eccentric force vectors that targeted the exact deficits in my left quad. At month 7, I set a personal best on a 20-mile mountain run.",
+            pain: "8/10 ➔ 0/10",
+            mobility: "+96% Range",
+            duration: "8 Weeks Protocol"
+        }, {
+            name: "Helena Rostova",
+            title: "Interior Architect",
+            condition: "Frozen Shoulder (Stage 2 Adhesive Capsulitis)",
+            therapist: "Dr. Sophia Moreau, DPT",
+            avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+            quote: "I couldn't reach behind my back or sleep on my side without severe pain. Dr. Moreau's gentle combination of dry needling and deep fascial release restored my range of motion from 55 degrees to full 175 degrees overhead reach.",
+            pain: "8.5/10 ➔ 1/10",
+            mobility: "+120° Flexion",
+            duration: "5 Weeks Protocol"
+        }];
+
+        let testIndex = 0;
+
+        function changeTestimonial(idx) {
+            testIndex = idx;
+            const t = TESTIMONIALS[testIndex];
+            document.getElementById('test-name').innerText = t.name;
+            document.getElementById('test-title').innerText = t.title;
+            document.getElementById('test-condition').innerText = t.condition;
+            document.getElementById('test-therapist').innerText = `Care led by ${t.therapist}`;
+            document.getElementById('test-avatar').src = t.avatar;
+            document.getElementById('test-quote').innerText = `"${t.quote}"`;
+            document.getElementById('test-pain').innerText = t.pain;
+            document.getElementById('test-mobility').innerText = t.mobility;
+            document.getElementById('test-duration').innerText = t.duration;
+
+            document.querySelectorAll('.test-dot').forEach((d, i) => {
+                d.className = i === idx ? 'test-dot w-8 h-2 rounded-full bg-[#1B382B]' : 'test-dot w-2 h-2 rounded-full bg-gray-300';
+            });
+        }
+
+        function prevTestimonial() {
+            testIndex = (testIndex - 1 + TESTIMONIALS.length) % TESTIMONIALS.length;
+            changeTestimonial(testIndex);
+        }
+
+        function nextTestimonial() {
+            testIndex = (testIndex + 1) % TESTIMONIALS.length;
+            changeTestimonial(testIndex);
+        }
+
+        // Modal Helpers
+        function openVideoModal() {
+            document.getElementById('video-modal').classList.remove('hidden');
+        }
+
+        function closeVideoModal() {
+            document.getElementById('video-modal').classList.add('hidden');
+        }
+
+        function openReviewModal() {
+            document.getElementById('review-modal').classList.remove('hidden');
+        }
+
+        function closeReviewModal() {
+            document.getElementById('review-modal').classList.add('hidden');
+        }
+
+        function handleReviewSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('rev-name').value;
+            const condition = document.getElementById('rev-condition').value;
+            const quote = document.getElementById('rev-quote').value;
+
+            TESTIMONIALS.unshift({
+                name: name,
+                title: "Verified Clinical Patient",
+                condition: condition,
+                therapist: "Dr. Alistair Vance, DPT",
+                avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+                quote: quote,
+                pain: "8/10 ➔ 0/10",
+                mobility: "+94% Range",
+                duration: "5 Weeks Protocol"
+            });
+
+            changeTestimonial(0);
+            closeReviewModal();
+            try {
+                confetti({
+                    particleCount: 70,
+                    spread: 60,
+                    origin: {
+                        y: 0.5
+                    },
+                    colors: ['#DFBF6D', '#1B382B']
+                });
+            } catch (err) {}
+        }
+
+        function scrollToId(id) {
+            const el = document.getElementById(id);
+            if (el) el.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
