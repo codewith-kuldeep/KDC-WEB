@@ -221,7 +221,7 @@ END:VCALENDAR`;
                       ? 'bg-[#1B382B] text-white ring-4 ring-[#DFBF6D]/30'
                       : 'bg-white text-gray-400 border border-[#DDD4C7]'
                 }`}>
-                  {step > s.num ? <Check className="w-4 h-4 stroke-[3]" /> : s.num}
+                  {step > s.num ? <Check className="w-4 h-4 stroke-3" /> : s.num}
                 </div>
                 <span className={`text-[11px] font-bold mt-2 whitespace-nowrap ${
                   step >= s.num ? 'text-[#1B382B]' : 'text-gray-400'
@@ -298,7 +298,7 @@ END:VCALENDAR`;
                         <span className={`text-xs font-bold ${
                           selectedServiceId === srv.id ? 'text-white' : 'text-[#1B382B]'
                         }`}>
-                          ${srv.price}
+                          Rs {srv.price}
                         </span>
                       </div>
                       <p className={`font-serif text-lg font-bold mt-1 leading-snug ${

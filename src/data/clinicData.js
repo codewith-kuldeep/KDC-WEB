@@ -45,26 +45,26 @@ export const SERVICES = [{
         id: "spine-decompression",
         title: "Spinal Decompression & Posture Architecture",
         category: "Spine & Neck",
-        duration: "60 mins",
-        price: 165,
+        duration: "45 mins",
+        price: 700,
         tag: "Most Requested",
         description: "Computerized axial decompression combined with manual facet joint mobilization to relieve pinched nerves, sciatica, and disc bulges.",
         recommendedFor: ["Lumbar Disc Herniation", "Sciatic Radiating Pain", "Cervical Radiculopathy", "Chronic Stiff Neck"],
         techniques: ["Axial Decompression", "Maitland Joint Mobilization", "McKenzie Protocol"],
-        leadSpecialist: "dr-vance",
+        leadSpecialist: "dr-muskan",
         image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80"
     },
     {
         id: "sports-biomechanics",
         title: "High-Performance Sports Kinetics & ACL Return",
         category: "Sports Rehab",
-        duration: "60 mins",
-        price: 180,
+        duration: "45 mins",
+        price: 1000,
         tag: "Athletic Excellence",
         description: "Multi-camera motion analysis, force plate tracking, and eccentric strength protocols designed to rebuild explosive strength post-injury.",
         recommendedFor: ["ACL / PCL Tears", "Runner's Knee (Patellofemoral)", "Hamstring Strains", "Ankle Sprains"],
         techniques: ["Force Vector Loading", "Neuromuscular Re-education", "Plyometric Progressions"],
-        leadSpecialist: "dr-chen",
+        leadSpecialist: "dr-muskan",
         image: "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
     },
 
@@ -72,39 +72,39 @@ export const SERVICES = [{
         id: "post-op-joint",
         title: "Post-Surgical Joint & Ligament Restoration",
         category: "Post-Operative",
-        duration: "75 mins",
-        price: 195,
+        duration: "45 mins",
+        price: 1000,
         tag: "Care Protocol",
         description: "Phased, protective joint therapy tailored to orthopedic surgeon guidelines to preserve implants, restore flexion, and halt scar adhesion.",
         recommendedFor: ["Hip & Knee Arthroplasty", "Rotator Cuff Repair", "Spinal Fusion Recovery", "Meniscus Repair"],
         techniques: ["Continuous Passive Motion", "Lymphatic Drainage", "Isometric Stabilization"],
-        leadSpecialist: "dr-reyes",
+        leadSpecialist: "dr-muskan",
         image: "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80"
     },
     {
         id: "ergonomic-longevity",
         title: "Executive Ergonomic & Postural Rebalancing",
         category: "Wellness & Preventive",
-        duration: "50 mins",
-        price: 155,
+        duration: "45 mins",
+        price: 700,
         tag: "Modern Lifestyle",
         description: "Correct desk-bound kyphosis, forward head translation, and pelvic tilts through targeted thoracic mobility and deep core activation.",
         recommendedFor: ["Tech Neck & Headaches", "Anterior Pelvic Tilt", "Thoracic Outlet Strains", "Sedentary Fatigue"],
         techniques: ["Thoracic Cavity Mobilization", "Scapular Stabilization", "Custom Ergonomic Blueprint"],
-        leadSpecialist: "dr-vance",
+        leadSpecialist: "dr-muskan",
         image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80"
     },
     {
         id: "pelvic-core",
         title: "Pelvic Floor & Lumbopelvic Stabilization",
         category: "Specialized Health",
-        duration: "60 mins",
-        price: 170,
+        duration: "45 mins",
+        price: 700,
         tag: "Holistic Care",
         description: "Gentle internal and external biofeedback therapy restoring pelvic diaphragm tone, breathing mechanics, and sacroiliac stability.",
         recommendedFor: ["Sacroiliac (SI) Joint Pain", "Postpartum Core Weakness", "Diastasis Recti", "Hip Impingement"],
         techniques: ["Real-Time Ultrasound Biofeedback", "Diaphragmatic Breathing", "Core Kinetic Slings"],
-        leadSpecialist: "dr-moreau",
+        leadSpecialist: "dr-muskan",
         image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
     }
 ];
@@ -116,7 +116,7 @@ export const SYMPTOM_BODY_ZONES = [{
         commonComplaints: "Stabbing pinch when turning head, radiating arm tingling, tension behind temples.",
         recommendedServiceId: "dry-needling",
         recoveryTimeline: "2 to 4 weeks",
-        recommendedSpecialist: "dr-moreau"
+        recommendedSpecialist: "dr-muskan"
     },
     {
         id: "lumbar",
@@ -125,7 +125,7 @@ export const SYMPTOM_BODY_ZONES = [{
         commonComplaints: "Sharp electric shooting down the leg, morning stiffness, difficulty standing straight.",
         recommendedServiceId: "spine-decompression",
         recoveryTimeline: "4 to 6 weeks",
-        recommendedSpecialist: "dr-vance"
+        recommendedSpecialist: "dr-muskan"
     },
     {
         id: "shoulder",
@@ -134,7 +134,7 @@ export const SYMPTOM_BODY_ZONES = [{
         commonComplaints: "Inability to sleep on side, pain reaching overhead, clicking and weakness when lifting.",
         recommendedServiceId: "dry-needling",
         recoveryTimeline: "3 to 6 weeks",
-        recommendedSpecialist: "dr-moreau"
+        recommendedSpecialist: "dr-muskan"
     },
     {
         id: "knee",
@@ -143,7 +143,7 @@ export const SYMPTOM_BODY_ZONES = [{
         commonComplaints: "Instability going down stairs, deep joint swelling, snapping sensation during pivots.",
         recommendedServiceId: "sports-biomechanics",
         recoveryTimeline: "6 to 8 weeks",
-        recommendedSpecialist: "dr-chen"
+        recommendedSpecialist: "dr-muskan"
     },
     {
         id: "hip",
@@ -152,7 +152,7 @@ export const SYMPTOM_BODY_ZONES = [{
         commonComplaints: "Deep groin pinch when sitting, SI joint ache after walking, restricted hip rotation.",
         recommendedServiceId: "pelvic-core",
         recoveryTimeline: "4 to 7 weeks",
-        recommendedSpecialist: "dr-reyes"
+        recommendedSpecialist: "dr-muskan"
     },
     {
         id: "ankle",
@@ -161,20 +161,20 @@ export const SYMPTOM_BODY_ZONES = [{
         commonComplaints: "First steps in morning feel like stepping on glass, recurring sprains, tendon tightness.",
         recommendedServiceId: "sports-biomechanics",
         recoveryTimeline: "3 to 5 weeks",
-        recommendedSpecialist: "dr-chen"
+        recommendedSpecialist: "dr-muskan"
     }
 ];
 
 export const INITIAL_TESTIMONIALS = [{
         id: "test-1",
-        name: "Evelyn Montgomery",
+        name: "Anamika Gupta",
         title: "Classical Pianist & Educator",
-        age: "42",
+        age: "32",
         condition: "Lumbar Disc Herniation (L4-L5) & Sciatica",
         category: "Spine & Disc",
         rating: 5,
         avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
-        quote: "I was scheduled for spinal microdiscectomy surgery after 18 months of debilitating sciatica that left me unable to sit at my piano for more than 10 minutes. Dr. Vance’s computerized decompression protocol and hands-on realignment completely turned my life around. By week 4, the nerve pain vanished. I just played my first solo recital in two years, completely pain-free.",
+        quote: "I was scheduled for spinal microdiscectomy surgery after 18 months of debilitating sciatica that left me unable to sit at my piano for more than 10 minutes. Dr. Muskan’s computerized decompression protocol and hands-on realignment completely turned my life around. By week 4, the nerve pain vanished. I just played my first solo recital in two years, completely pain-free.",
         metrics: {
             painBefore: "9/10",
             painAfter: "0/10",
@@ -187,14 +187,14 @@ export const INITIAL_TESTIMONIALS = [{
     },
     {
         id: "test-2",
-        name: "Marcus Sterling",
+        name: "Dharma Singh",
         title: "Marathon Runner & Tech Founder",
         age: "36",
         condition: "Post-Op ACL Reconstruction & Patellar Tendinopathy",
         category: "Sports Rehab",
         rating: 5,
         avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-        quote: "My surgeon told me returning to sub-3-hour marathons would take at least 18 months. Dr. Vivienne Chen used 3D motion tracking and eccentric force vectors that targeted the exact neuromuscular deficits in my left quad. Her scientific approach gave me confidence every single week. At month 7, I set a personal best on a 20-mile mountain training run.",
+        quote: "My surgeon told me returning to sub-3-hour marathons would take at least 18 months. Dr. Muskan used 3D motion tracking and eccentric force vectors that targeted the exact neuromuscular deficits in my left quad. Her scientific approach gave me confidence every single week. At month 7, I set a personal best on a 20-mile mountain training run.",
         metrics: {
             painBefore: "8/10",
             painAfter: "0/10",
@@ -207,14 +207,14 @@ export const INITIAL_TESTIMONIALS = [{
     },
     {
         id: "test-3",
-        name: "Helena Rostova",
+        name: "Meera Desai",
         title: "Interior Architect",
-        age: "48",
+        age: "28",
         condition: "Frozen Shoulder (Adhesive Capsulitis - Stage 2)",
         category: "Shoulder & Neck",
         rating: 5,
         avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-        quote: "I couldn't reach behind my back to fasten my dress or sleep on my right side without waking up in tears. Conventional therapy elsewhere only caused severe flare-ups. Dr. Sophia Moreau's gentle combination of dry needling and deep fascial manipulation released the deep joint capsule without aggressive force. My range of motion went from 55 degrees to full 175 degrees.",
+        quote: "I couldn't reach behind my back to fasten my dress or sleep on my right side without waking up in tears. Conventional therapy elsewhere only caused severe flare-ups. Dr. Muskan's gentle combination of dry needling and deep fascial manipulation released the deep joint capsule without aggressive force. My range of motion went from 55 degrees to full 175 degrees.",
         metrics: {
             painBefore: "8.5/10",
             painAfter: "1/10",
@@ -227,14 +227,14 @@ export const INITIAL_TESTIMONIALS = [{
     },
     {
         id: "test-4",
-        name: "David K. Sutherland",
-        title: "Managing Director, Venture Capital",
-        age: "54",
+        name: "Omkar Mehta",
+        title: "Manager, Tech Startup",
+        age: "44",
         condition: "Chronic Cervicogenic Migraines & Tech Neck",
         category: "Spine & Disc",
         rating: 5,
         avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
-        quote: "Twelve hours a day across laptops and flights had caused severe forward head posture and three debilitating migraines every single week. Élan Physio treats the human body like an architectural masterpiece. After 6 sessions of cervical spine decompression and scapular balancing, my migraines have ceased entirely for 4 consecutive months.",
+        quote: "Twelve hours a day across laptops and flights had caused severe forward head posture and three debilitating migraines every single week. Dr. Muskan treats the human body like an architectural masterpiece. After 6 sessions of cervical spine decompression and scapular balancing, my migraines have ceased entirely for 4 consecutive months.",
         metrics: {
             painBefore: "8/10",
             painAfter: "0/10",
@@ -247,14 +247,14 @@ export const INITIAL_TESTIMONIALS = [{
     },
     {
         id: "test-5",
-        name: "Camille Laurent",
+        name: "Anjali Kapoor",
         title: "Professional Contemporary Dancer",
         age: "29",
         condition: "Sacroiliac (SI) Joint Dysfunction & Labral Tear",
         category: "Pelvic & Core",
         rating: 5,
         avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
-        quote: "As a dancer, my career depends on subtle micro-adjustments in pelvis stability. Dr. Julian Reyes was extraordinarily knowledgeable about athletic dance physiology. We rebuilt my pelvic sling using real-time biofeedback and joint balancing. I returned to center stage in Paris with more stability than before my injury.",
+        quote: "As a dancer, my career depends on subtle micro-adjustments in pelvis stability. Dr. Muskan was extraordinarily knowledgeable about athletic dance physiology. We rebuilt my pelvic sling using real-time biofeedback and joint balancing. I returned to center stage in Paris with more stability than before my injury.",
         metrics: {
             painBefore: "7/10",
             painAfter: "0/10",
