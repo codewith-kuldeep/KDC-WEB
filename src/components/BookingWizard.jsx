@@ -201,9 +201,9 @@ END:VCALENDAR`;
         {/* Multi-step progress bar */}
         <div className="mb-10 max-w-2xl mx-auto">
           <div className="flex items-center justify-between relative">
-            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-[#E6DDD0] -translate-y-1/2 -z-0" />
+            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-[#E6DDD0] -translate-y-1/2 z-0" />
             <div 
-              className="absolute top-1/2 left-0 h-0.5 bg-[#1B382B] -translate-y-1/2 transition-all duration-500 -z-0"
+              className="absolute top-1/2 left-0 h-0.5 bg-[#1B382B] -translate-y-1/2 transition-all duration-500 z-0"
               style={{ width: `${((step - 1) / 3) * 100}%` }}
             />
 
@@ -687,7 +687,7 @@ END:VCALENDAR`;
               </div>
 
               {/* Digital Boarding Pass Ticket */}
-              <div className="max-w-xl mx-auto rounded-3xl overflow-hidden border-2 border-[#DFBF6D]/60 shadow-2xl bg-gradient-to-b from-[#1B382B] to-[#254435] text-white">
+              <div className="max-w-xl mx-auto rounded-3xl overflow-hidden border-2 border-[#DFBF6D]/60 shadow-2xl bg-linear-to-b from-[#1B382B] to-[#254435] text-white">
                 
                 {/* Ticket Header */}
                 <div className="p-6 border-b border-white/15 flex items-center justify-between">
