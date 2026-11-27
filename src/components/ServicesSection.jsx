@@ -80,7 +80,7 @@ export default function ServicesSection({ onBookService }) {
                       <span>{service.duration}</span>
                     </div>
                     <div className="bg-[#DFBF6D] text-[#1B382B] px-3 py-1 rounded-full font-bold shadow">
-                      ${service.price} / Session
+                      &#8377;{service.price} / Session
                     </div>
                   </div>
                 </div>
