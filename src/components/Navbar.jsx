@@ -62,7 +62,7 @@ export default function Navbar({ onBookClick, onSymptomClick }) {
           <div className="flex items-center justify-between">
             {/* Brand Logo */}
             <a href="#" className="group flex items-center space-x-3">
-              <div className="relative w-11 h-11 rounded-2xl bg-gradient-to-br from-[#1B382B] to-[#2A483A] flex items-center justify-center text-[#DFBF6D] shadow-md group-hover:scale-105 transition-transform duration-300 border border-[#DFBF6D]/30">
+              <div className="relative w-11 h-11 rounded-2xl bg-linear-to-br from-[#1B382B] to-[#2A483A] flex items-center justify-center text-[#DFBF6D] shadow-md group-hover:scale-105 transition-transform duration-300 border border-[#DFBF6D]/30">
                 <Activity className="w-6 h-6 stroke-[2.2] animate-pulse" />
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-[#DFBF6D] rounded-full border-2 border-[#FAF7F2]"></div>
               </div>
@@ -80,7 +80,7 @@ export default function Navbar({ onBookClick, onSymptomClick }) {
             <nav className="hidden lg:flex items-center space-x-8 xl:space-x-15 text-sm font-medium text-[#2C3831] tracking-wide ">
               <a 
                 href="#services" 
-                className="hover:text-[#A37F2C] transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#A37F2C] hover:after:w-full after:transition-all after:duration-300"
+                className="hover:text-[#A37F2C] transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#A37F2C] hover:after:w-full after:transition-all after:duration-300"
               >
                 Treatments & Protocols
               </a>
@@ -92,13 +92,13 @@ export default function Navbar({ onBookClick, onSymptomClick }) {
               </button>
               <a 
                 href="#specialists" 
-                className="hover:text-[#A37F2C] transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#A37F2C] hover:after:w-full after:transition-all after:duration-300"
+                className="hover:text-[#A37F2C] transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#A37F2C] hover:after:w-full after:transition-all after:duration-300"
               >
                 Senior Clinicians
               </a>
               <a 
                 href="#testimonials" 
-                className="hover:text-[#A37F2C] transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-[#A37F2C] hover:after:w-full after:transition-all after:duration-300"
+                className="hover:text-[#A37F2C] transition-colors duration-200 py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#A37F2C] hover:after:w-full after:transition-all after:duration-300"
               >
                 Patient Recoveries
               </a>
