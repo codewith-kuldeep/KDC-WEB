@@ -173,7 +173,7 @@ export const INITIAL_TESTIMONIALS = [{
         condition: "Lumbar Disc Herniation (L4-L5) & Sciatica",
         category: "Spine & Disc",
         rating: 5,
-        avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+        avatar: "/KDC-Photos/Anamika-gupta.jpg",
         quote: "I was scheduled for spinal microdiscectomy surgery after 18 months of debilitating sciatica that left me unable to sit at my piano for more than 10 minutes. Dr. Muskan’s computerized decompression protocol and hands-on realignment completely turned my life around. By week 4, the nerve pain vanished. I just played my first solo recital in two years, completely pain-free.",
         metrics: {
             painBefore: "9/10",
@@ -193,7 +193,7 @@ export const INITIAL_TESTIMONIALS = [{
         condition: "Post-Op ACL Reconstruction & Patellar Tendinopathy",
         category: "Sports Rehab",
         rating: 5,
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+        avatar: "/KDC-Photos/Dharma-singh.jpg",
         quote: "My surgeon told me returning to sub-3-hour marathons would take at least 18 months. Dr. Muskan used 3D motion tracking and eccentric force vectors that targeted the exact neuromuscular deficits in my left quad. Her scientific approach gave me confidence every single week. At month 7, I set a personal best on a 20-mile mountain training run.",
         metrics: {
             painBefore: "8/10",
@@ -213,7 +213,7 @@ export const INITIAL_TESTIMONIALS = [{
         condition: "Frozen Shoulder (Adhesive Capsulitis - Stage 2)",
         category: "Shoulder & Neck",
         rating: 5,
-        avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
+        avatar: "/KDC-Photos/Meera-desai.jpg",
         quote: "I couldn't reach behind my back to fasten my dress or sleep on my right side without waking up in tears. Conventional therapy elsewhere only caused severe flare-ups. Dr. Muskan's gentle combination of dry needling and deep fascial manipulation released the deep joint capsule without aggressive force. My range of motion went from 55 degrees to full 175 degrees.",
         metrics: {
             painBefore: "8.5/10",
@@ -233,7 +233,7 @@ export const INITIAL_TESTIMONIALS = [{
         condition: "Chronic Cervicogenic Migraines & Tech Neck",
         category: "Spine & Disc",
         rating: 5,
-        avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+        avatar: "/KDC-Photos/Omkar-metha.jpg",
         quote: "Twelve hours a day across laptops and flights had caused severe forward head posture and three debilitating migraines every single week. Dr. Muskan treats the human body like an architectural masterpiece. After 6 sessions of cervical spine decompression and scapular balancing, my migraines have ceased entirely for 4 consecutive months.",
         metrics: {
             painBefore: "8/10",
@@ -253,7 +253,7 @@ export const INITIAL_TESTIMONIALS = [{
         condition: "Sacroiliac (SI) Joint Dysfunction & Labral Tear",
         category: "Pelvic & Core",
         rating: 5,
-        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        avatar: "/KDC-Photos/Anjali-Kapoor.jpg",
         quote: "As a dancer, my career depends on subtle micro-adjustments in pelvis stability. Dr. Muskan was extraordinarily knowledgeable about athletic dance physiology. We rebuilt my pelvic sling using real-time biofeedback and joint balancing. I returned to center stage in Paris with more stability than before my injury.",
         metrics: {
             painBefore: "7/10",
@@ -269,23 +269,23 @@ export const INITIAL_TESTIMONIALS = [{
 
 export const FAQS = [{
         q: "Do I require a medical doctor's referral to book a consultation?",
-        a: "In California and under Direct Access legislation, you do not require a physician's referral to begin comprehensive physical therapy with our Board-Certified Doctors of Physical Therapy. If your specific insurance or condition benefits from interdisciplinary coordination, our concierge desk seamlessly communicates directly with your orthopedic surgeon or primary physician."
+        a: "No, you can book directly with us without a prior referral. Our physiotherapists perform a complete physical and movement assessment on your first visit. However, if you already have an MRI, X-Ray, or doctor's prescription, please bring it along so we can review it together."
     },
     {
-        q: "How does Élan Physio differ from standard physical therapy clinics?",
-        a: "Unlike typical high-volume clinics where a therapist divides their attention across 3 to 4 patients simultaneously with aides, every session at Élan is strictly 1-on-1 for 60 to 75 uninterrupted minutes with your dedicated Doctor of Physical Therapy inside private acoustic therapy suites."
+        q: "How does Kaushish Physiotherapy & Rehabilitation center differ from standard physical therapy clinics?",
+        a: "Unlike busy clinics where one therapist attends 3–4 patients at once, at Kaushish Physiotherapy & Rehabilitation center every patient receives dedicated 1-on-1 attention for 45 to 60 minutes. We combine hands-on manual therapy, spinal decompression, and targeted exercises tailored to your exact condition."
     },
     {
-        q: "What should I expect during my initial assessment session?",
-        a: "Your first session includes a 75-minute comprehensive diagnostic exam: kinematic video gait/movement analysis, orthopedic joint testing, neurological screening, and palpation. You will receive an immediate hands-on relief treatment on day one, followed by a customized 3D Recovery Road Map."
+        q: "Do you provide home-visit physiotherapy for senior citizens or post-surgery patients?",
+        a: "Yes. If you or a family member cannot travel due to severe back pain, stroke recovery, or recent knee/hip surgery, you can book our At-Home Visit option across Meerut, or choose HD Telehealth for online guidance."
     },
     {
-        q: "Is dry needling painful, and how soon does relief occur?",
-        a: "Dry needling involves ultrafine needles (thinner than acupuncture needles) targeting tight muscular trigger points. Most patients experience a quick, brief twitch sensation that signals muscle release, followed by an immediate easing of deep muscular tension within 12 to 24 hours."
+        q: "What should I bring for my first visit, and how many sessions will it take to recover?",
+        a: "Please wear loose, comfortable clothing and carry any recent X-Ray, MRI reports, or surgery discharge papers. On Day 1, we identify the root cause, give immediate pain-relief treatment, and share a clear recovery plan—most patients notice significant relief within 4 to 8 sessions."
     },
     {
-        q: "Can I submit my receipts for insurance or FSA/HSA reimbursement?",
-        a: "Yes. We provide complete, itemized Superbills with all appropriate medical diagnostic (ICD-10) and treatment (CPT) codes after each consultation. Most patients with out-of-network benefits receive substantial reimbursement directly from their carriers, and HSA/FSA cards are accepted directly."
+        q: "What payment modes do you accept, and do you provide bills for Mediclaim reimbursement?",
+        a: "We accept UPI (Google Pay, PhonePe, Paytm), Cash. We also provide proper stamped receipts and treatment summaries for corporate or Mediclaim reimbursement, subject to your policy terms."
     }
 ];
 

@@ -28,7 +28,7 @@ export default function VideoStoryModal({ isOpen, onClose }) {
             className="w-full h-full object-cover opacity-60 scale-105"
           />
 
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1B382B] via-transparent to-black/60" />
+          <div className="absolute inset-0 bg-linear-to-t from-[#1B382B] via-transparent to-black/60" />
 
           {/* Central Play/Pause Watermark Button */}
           <button

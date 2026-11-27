@@ -31,7 +31,7 @@ export default function SymptomChecker({ onSelectProtocolForBooking }) {
   return (
     <section id="symptom-checker" className="py-24 bg-[#F5EFE6] relative overflow-hidden">
       {/* Decorative background grid pattern */}
-      <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#1B382B_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none" />
+      <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#1B382B_1px,transparent_1px)] bg-size-[24px_24px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

@@ -56,7 +56,7 @@ export default function TestimonialsSection({ testimonials, onOpenReviewModal })
       onMouseLeave={() => setIsAutoplay(true)}
     >
       {/* Ambient background glow */}
-      <div className="absolute top-1/2 left-1/4 w-[500px] h-[500px] bg-[#C29B38]/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-glow" />
+      <div className="absolute top-1/2 left-1/4 w-125 h-125 bg-[#C29B38]/10 rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-glow" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
@@ -110,7 +110,7 @@ export default function TestimonialsSection({ testimonials, onOpenReviewModal })
           <div className="glass-panel rounded-3xl p-6 sm:p-10 lg:p-12 shadow-2xl border border-[#DFBF6D]/40 bg-white/95 transition-all duration-500 relative">
             
             {/* Elegant Quotation Mark watermark */}
-            <Quote className="absolute top-8 right-8 sm:right-12 w-24 h-24 sm:w-32 sm:h-32 text-[#EFE7D8]/60 -z-0 pointer-events-none" />
+            <Quote className="absolute top-8 right-8 sm:right-12 w-24 h-24 sm:w-32 sm:h-32 text-[#EFE7D8]/60 z-0 pointer-events-none" />
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
               
@@ -278,7 +278,7 @@ export default function TestimonialsSection({ testimonials, onOpenReviewModal })
                   <span className="text-xs font-bold text-[#1B382B]">5.0</span>
                 </div>
               </div>
-              <p className="text-xs text-[#2C3831] line-clamp-2 italic font-serif text-sm">
+              <p className="text-xs text-[#2C3831] line-clamp-2 italic font-serif">
                 "{item.quote}"
               </p>
               <div className="flex items-center space-x-2.5 pt-2 border-t border-[#F0EBE2]">

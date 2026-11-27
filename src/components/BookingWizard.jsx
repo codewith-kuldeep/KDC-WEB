@@ -93,7 +93,7 @@ export default function BookingWizard({ preselectedService, preselectedDoctor, o
       if (!validateStep3() || isSubmitting) return;
       
       // Generate booking reference & send details to clinic WhatsApp
-      const ref = `ELAN-${Math.floor(100000 + Math.random() * 900000)}`;
+      const ref = `KPRC-${Math.floor(100000 + Math.random() * 900000)}`;
       const bookingPayload = {
         bookingReference: ref,
         appointmentType,
@@ -150,7 +150,7 @@ export default function BookingWizard({ preselectedService, preselectedDoctor, o
     const calendarDate = selectedDate.replace(/-/g, '');
     const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Élan Physiotherapy//Appointment Booking//EN
+PRODID:-//KPRC//Appointment Booking//EN
 BEGIN:VEVENT
 SUMMARY:${activeService.title} - ${CLINIC_INFO.name}
 DESCRIPTION:1-on-1 Doctoral Rehabilitation Session with ${activeDoctor.name}. Reference: ${bookingReference}
@@ -164,7 +164,7 @@ END:VCALENDAR`;
     const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
     const link = document.createElement('a');
     link.href = window.URL.createObjectURL(blob);
-    link.setAttribute('download', `Elan-Physio-Appointment-${bookingReference}.ics`);
+    link.setAttribute('download', `KPRC-Appointment-${bookingReference}.ics`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -252,7 +252,7 @@ END:VCALENDAR`;
                   {[
                     { title: "In-Clinic Site", desc: "E.K. Road, Near Sainik Board, Meerut", fee: "Rs 0 addon" },
                     { title: "At-Home Visit", desc: "Doctor visits your residence", fee: "Rs 1000  fee" },
-                    { title: "HD Telehealth", desc: "High-definition video consult", fee: "Save Rs 1000" }
+                    { title: "On Video-Call", desc: "High-definition video consult", fee: "Save Rs 1000" }
                   ].map((venue) => (
                     <button
                       key={venue.title}
@@ -298,7 +298,7 @@ END:VCALENDAR`;
                         <span className={`text-xs font-bold ${
                           selectedServiceId === srv.id ? 'text-white' : 'text-[#1B382B]'
                         }`}>
-                          Rs {srv.price}
+                          &#8377;{srv.price}
                         </span>
                       </div>
                       <p className={`font-serif text-lg font-bold mt-1 leading-snug ${

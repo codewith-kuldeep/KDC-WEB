@@ -38,7 +38,7 @@ export default function ClinicAmbience() {
             Designed for Serenity. Engineered for Precision.
           </h2>
           <p className="text-[#4E5E55] text-base sm:text-lg">
-            Say goodbye to fluorescent hospital hallways and open crowded gyms. KPRC is purposefully created as a luxury restorative center.
+            Say goodbye to fluorescent hospital hallways and open crowded gyms. KaushishPhysiotherapy & Rehabilitation Center is purposefully created as a luxury restorative center.
           </p>
         </div>
 

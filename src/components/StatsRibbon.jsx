@@ -7,7 +7,7 @@ export default function StatsRibbon() {
 
   return (
     <div className="relative z-20 -mt-6 sm:-mt-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="glass-panel rounded-3xl p-6 sm:p-8 shadow-2xl border border-[#DFBF6D]/30 bg-gradient-to-br from-white/95 via-[#FCFAF7]/95 to-[#F7F2E8]/95 backdrop-blur-xl">
+      <div className="glass-panel rounded-3xl p-6 sm:p-8 shadow-2xl border border-[#DFBF6D]/30 bg-linear-to-br from-white/95 via-[#FCFAF7]/95 to-[#F7F2E8]/95 backdrop-blur-xl">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-[#E5DDD0]">
           {CLINIC_INFO.stats.map((stat, idx) => {
             const Icon = icons[idx % icons.length];
