@@ -106,7 +106,103 @@ export const SERVICES = [{
         techniques: ["Real-Time Ultrasound Biofeedback", "Diaphragmatic Breathing", "Core Kinetic Slings"],
         leadSpecialist: "dr-muskan",
         image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
-    }
+    },
+    {
+        id: "ortho-therapy",
+        title: "Orthopedic Rehabilitation",
+        category: "Orthopedic Care",
+        duration: "45-50 mins",
+        price: 700,
+        tag: "Pain Relief",
+        description: "Targeted manual therapy and evidence-based exercise protocols to relieve spinal nerve compression, restore joint mobility, and rebuild functional strength.",
+        recommendedFor: [
+            "Back & Neck Pain",
+            "Slip Disc (Herniated Disc)",
+            "Sciatica",
+            "Frozen Shoulder",
+            "Knee Osteoarthritis"
+        ],
+        techniques: [
+            "Manual Joint Mobilization",
+            "McKenzie Method & Nerve Gliding",
+            "Capsular Stretching & Myofascial Release",
+            "Joint-Loading & Strength Conditioning"
+        ],
+        leadSpecialist: "dr-muskan",
+        image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: "oncology-rehab",
+        title: "Oncology & Cancer Rehabilitation",
+        category: "Oncology Care",
+        duration: "45-50 mins",
+        price: 700,
+        tag: "Restorative Care",
+        description: "Compassionate, medically guided physiotherapy to manage cancer-related fatigue, lymphedema, and post-treatment stiffness while safely rebuilding strength and endurance.",
+        recommendedFor: [
+            "Post-Surgical Cancer Recovery",
+            "Lymphedema & Swelling",
+            "Cancer-Related Fatigue",
+            "Chemotherapy-Induced Neuropathy",
+            "Radiation Fibrosis & Joint Stiffness"
+        ],
+        techniques: [
+            "Manual Lymphatic Drainage",
+            "Gentle Mobility & Scar Tissue Release",
+            "Graded Strength & Endurance Conditioning",
+            "Balance & Neuropathy Training"
+        ],
+        leadSpecialist: "dr-muskan",
+        image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: "geriatric-physio",
+        title: "Geriatric Physiotherapy",
+        category: "Senior Care",
+        duration: "45-50 mins",
+        price: 700,
+        tag: "Active Aging",
+        description: "Safe, personalized rehabilitation designed for older adults to improve balance, reduce fall risk, ease age-related joint stiffness, and preserve daily independence.",
+        recommendedFor: [
+            "Balance Issues & Fall Prevention",
+            "Age-Related Arthritis & Joint Stiffness",
+            "Post-Joint Replacement Recovery",
+            "Osteoporosis & Muscle Weakness",
+            "Gait Instability & Mobility Decline"
+        ],
+        techniques: [
+            "Balance & Fall-Prevention Training",
+            "Functional Gait & Transfer Drills",
+            "Low-Impact Resistance Strengthening",
+            "Gentle Joint Mobilization & Posture Care"
+        ],
+        leadSpecialist: "dr-muskan",
+        image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+        id: "pain-electrotherapy",
+        title: "Pain Management & Electrotherapy",
+        category: "Pain & Recovery",
+        duration: "45-50 mins",
+        price: 700,
+        tag: "Targeted Relief",
+        description: "Non-invasive pain relief combining targeted electrical modalities and soft-tissue therapy to calm nerve irritation, reduce inflammation, and accelerate healing.",
+        recommendedFor: [
+            "Acute & Chronic Musculoskeletal Pain",
+            "Muscle Spasms & Trigger Points",
+            "Nerve Pain & Radiating Tingling",
+            "Tendonitis & Bursitis Inflammation",
+            "Post-Injury Swelling & Stiffness"
+        ],
+        techniques: [
+            "TENS & Interferential Therapy (IFT)",
+            "Therapeutic Ultrasound & Laser Therapy",
+            "Neuromuscular Electrical Stimulation (NMES)",
+            "Myofascial Trigger Point Release"
+        ],
+        leadSpecialist: "dr-muskan",
+        image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80"
+    },
 ];
 
 export const SYMPTOM_BODY_ZONES = [{
@@ -194,7 +290,7 @@ export const INITIAL_TESTIMONIALS = [{
         category: "Sports Rehab",
         rating: 5,
         avatar: "/KDC-Photos/Testomonial/Dharma-singh.jpg",
-        quote: "My surgeon told me returning to sub-3-hour marathons would take at least 18 months. Dr. Muskan used 3D motion tracking and eccentric force vectors that targeted the exact neuromuscular deficits in my left quad. Her scientific approach gave me confidence every single week. At month 7, I set a personal best on a 20-mile mountain training run.",
+        quote: "My surgeon told me returning to sub-3-hour marathons would take at least 18 months. Dr. Muskan targeted the exact neuromuscular deficits in my left quad. Her scientific approach gave me confidence every single week. At month 7, I set a personal best on a 20-mile mountain training run.",
         metrics: {
             painBefore: "8/10",
             painAfter: "0/10",
@@ -214,7 +310,7 @@ export const INITIAL_TESTIMONIALS = [{
         category: "Shoulder & Neck",
         rating: 5,
         avatar: "/KDC-Photos/Testomonial/Meera-desai.jpg",
-        quote: "I couldn't reach behind my back to fasten my dress or sleep on my right side without waking up in tears. Conventional therapy elsewhere only caused severe flare-ups. Dr. Muskan's gentle combination of dry needling and deep fascial manipulation released the deep joint capsule without aggressive force. My range of motion went from 55 degrees to full 175 degrees.",
+        quote: "I couldn't reach behind my back to fasten my dress or sleep on my right side without waking up in tears. Conventional therapy elsewhere only caused severe flare-ups. Dr. Muskan's gentle combination of targeted joint mobilization and deep myofascial release eased the stiff joint capsule without aggressive force. My range of motion went from 55 degrees to a full 175 degrees.",
         metrics: {
             painBefore: "8.5/10",
             painAfter: "1/10",
