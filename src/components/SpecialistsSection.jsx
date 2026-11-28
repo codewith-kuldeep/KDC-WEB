@@ -13,10 +13,10 @@ export default function SpecialistsSection({ onSelectDoctor }) {
             Clinical Faculty & Doctoral Leadership
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl font-bold text-[#14231B] tracking-tight">
-            Treated Exclusively By Doctors of Physical Therapy
+            Treated Exclusively By Doctors of PhysioTherapy
           </h2>
           <p className="text-[#4E5E55] text-base sm:text-lg">
-            No unlicensed aides or rotational assistants. Your care is personally administered by Board-Certified Orthopedic and Sports Specialists.
+            No unlicensed aides or rotational assistants. Your care is personally administered by Board-Certified Physiotherapy Specialists.
           </p>
         </div>
 

@@ -517,7 +517,7 @@ END:VCALENDAR`;
                   3. Confidential Patient Intake & Symptoms
                 </h3>
                 <p className="text-xs text-gray-500">
-                  All medical information is strictly encrypted under HIPAA standards.
+                  All medical information is strictly encrypted under NCAHP & RCI standards.
                 </p>
               </div>
 
@@ -530,7 +530,7 @@ END:VCALENDAR`;
                     type="text"
                     value={patientData.firstName}
                     onChange={(e) => setPatientData({ ...patientData, firstName: e.target.value })}
-                    placeholder="e.g. Julian"
+                    placeholder="e.g. Kuldeep"
                     className={`w-full px-4 py-2.5 rounded-xl border text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#1B382B] ${
                       errors.firstName ? 'border-red-500' : 'border-[#DDD4C7]'
                     }`}
@@ -546,7 +546,7 @@ END:VCALENDAR`;
                     type="text"
                     value={patientData.lastName}
                     onChange={(e) => setPatientData({ ...patientData, lastName: e.target.value })}
-                    placeholder="e.g. Mercer"
+                    placeholder="e.g. Singh"
                     className={`w-full px-4 py-2.5 rounded-xl border text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#1B382B] ${
                       errors.lastName ? 'border-red-500' : 'border-[#DDD4C7]'
                     }`}
@@ -562,7 +562,7 @@ END:VCALENDAR`;
                     type="email"
                     value={patientData.email}
                     onChange={(e) => setPatientData({ ...patientData, email: e.target.value })}
-                    placeholder="julian.mercer@gmail.com"
+                    placeholder="YourEmail@gmail.com"
                     className={`w-full px-4 py-2.5 rounded-xl border text-sm bg-white focus:outline-none focus:ring-2 focus:ring-[#1B382B] ${
                       errors.email ? 'border-red-500' : 'border-[#DDD4C7]'
                     }`}

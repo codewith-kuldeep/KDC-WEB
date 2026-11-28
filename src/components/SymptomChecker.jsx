@@ -195,7 +195,7 @@ export default function SymptomChecker({ onSelectProtocolForBooking }) {
                     <ArrowRight className="w-5 h-5 text-[#DFBF6D] transition-transform group-hover:translate-x-1.5" />
                   </button>
                   <p className="text-center text-xs text-gray-500 mt-2">
-                    Includes initial 75-min doctoral physical examination, 3D posture scan, & first day manual relief.
+                    Includes initial 45-50 min doctoral physical examination, & first day manual relief.
                   </p>
                 </div>
 

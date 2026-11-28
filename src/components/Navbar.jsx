@@ -35,7 +35,7 @@ export default function Navbar({ onBookClick, onSymptomClick }) {
               SAME-DAY EVALUATIONS
             </span>
             <span className="hidden md:inline text-[#B5C2BA]">
-              Meerut • 1-on-1 Doctor Care • Zero Crowded Waitrooms
+             E.K. Road, Near Sainik Board, Meerut • 1-on-1 Doctor Care • Zero  Crowded  Waitrooms
             </span>
           </div>
           <div className="flex items-center space-x-6 text-xs">

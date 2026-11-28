@@ -139,7 +139,7 @@ export default function ReviewModal({ isOpen, onClose, onAddTestimonial }) {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  placeholder="e.g. Katherine Hayes"
+                  placeholder="e.g. Kuldeep Singh"
                   className="w-full px-3.5 py-2 rounded-xl border border-[#DDD4C7] bg-white text-xs focus:ring-2 focus:ring-[#1B382B] outline-none"
                 />
               </div>
@@ -151,7 +151,7 @@ export default function ReviewModal({ isOpen, onClose, onAddTestimonial }) {
                   type="text"
                   value={formData.title}
                   onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                  placeholder="e.g. Marathon Runner or Architect"
+                  placeholder="e.g. Developer or Architect"
                   className="w-full px-3.5 py-2 rounded-xl border border-[#DDD4C7] bg-white text-xs focus:ring-2 focus:ring-[#1B382B] outline-none"
                 />
               </div>

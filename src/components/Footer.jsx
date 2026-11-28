@@ -57,7 +57,7 @@ export default function Footer() {
 
             <div className="flex items-center space-x-3 pt-2 text-xs text-[#DFBF6D]">
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
-              <span className="text-white/80">HIPAA Compliant & Fully Board Certified</span>
+              <span className="text-white/80">NCAHP & RCI Compliant & Fully Board Certified</span>
             </div>
           </div>
 
@@ -68,7 +68,6 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2 text-xs text-[#B2C0B7]">
               <li><a href="#services" className="hover:text-white transition-colors">Spinal Decompression</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Sports Knee & ACL</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Post-Op Restoration</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Ergonomic Posture</a></li>
               <li><a href="#services" className="hover:text-white transition-colors">Pelvic Floor Health</a></li>
@@ -147,7 +146,7 @@ export default function Footer() {
           
           <div className="flex items-center space-x-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Notice</a>
-            <a href="#" className="hover:text-white transition-colors">HIPAA Disclosure</a>
+            <a href="#" className="hover:text-white transition-colors">NCAHP & RCI Disclosure</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Care</a>
             
             <button

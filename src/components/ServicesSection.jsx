@@ -25,7 +25,7 @@ export default function ServicesSection({ onBookService }) {
               Targeted Rehabilitation For Lasting Biomechanical Health
             </h2>
             <p className="text-[#4E5E55] text-base sm:text-lg">
-              Every appointment is strictly 1-on-1 inside our acoustic therapy suites. <br /> No rushed 15-minute handoffs.
+              Every appointment is strictly 1-on-1 inside our soundproofed therapy rooms. <br /> No rushed 15-minute handoffs.
             </p>
           </div>
 

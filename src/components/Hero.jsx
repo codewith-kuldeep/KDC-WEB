@@ -16,9 +16,9 @@ export default function Hero({ onBookClick, onSymptomClick, onWatchVideo }) {
   return (
     <section className="relative overflow-hidden pt-12 pb-20 md:pt-20 md:pb-32">
       {/* Aesthetic Ambient Glowing Fluid Orbs */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-[#E0D5C1]/40 via-[#C29B38]/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-glow" />
-      <div className="absolute -top-20 -right-20 w-[450px] h-[450px] bg-[#2A483A]/10 rounded-full blur-3xl pointer-events-none -z-10 animate-float-slow" />
-      <div className="absolute bottom-10 -left-20 w-[400px] h-[400px] bg-[#DFBF6D]/15 rounded-full blur-3xl pointer-events-none -z-10 animate-float-reverse" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-linear-to-tr from-[#E0D5C1]/40 via-[#C29B38]/15 to-transparent rounded-full blur-3xl pointer-events-none -z-10 animate-pulse-glow" />
+      <div className="absolute -top-20 -right-20 w-112.5 h-112.5 bg-[#2A483A]/10 rounded-full blur-3xl pointer-events-none -z-10 animate-float-slow" />
+      <div className="absolute bottom-10 -left-20 w-100 h-100 bg-[#DFBF6D]/15 rounded-full blur-3xl pointer-events-none -z-10 animate-float-reverse" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
@@ -29,7 +29,7 @@ export default function Hero({ onBookClick, onSymptomClick, onWatchVideo }) {
             {/* Top Pill / Badge */}
             <div className="inline-flex items-center space-x-2 px-4 py-2 rounded-full bg-[#EFE9DD] border border-[#D5C9B8] text-[#1B382B] text-xs font-semibold tracking-wider uppercase shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#A37F2C]" />
-              <span>World-Class Musculoskeletal & Spine Sanctuary</span>
+              <span>World-Class Musculoskeletal & Spine center</span>
             </div>
 
             {/* Main Headline */}
@@ -41,7 +41,7 @@ export default function Hero({ onBookClick, onSymptomClick, onWatchVideo }) {
 
             {/* Sub-headline */}
             <p className="text-lg sm:text-xl text-[#3D4C44] max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
-              Moving beyond temporary adjustments. We combine computerized spinal decompression, Olympic-tier sports kinetic restoration, and 1-on-1 doctoral care to resolve chronic pain at its biological root.
+              Moving beyond temporary adjustments. We combine computerized spinal decompression, and 1-on-1 doctoral care to resolve chronic pain at its biological root.
             </p>
 
             {/* CTAs */}
@@ -88,15 +88,15 @@ export default function Hero({ onBookClick, onSymptomClick, onWatchVideo }) {
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* Main Classy Image Container */}
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] group">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-4/5 group">
                 <img 
-                  src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=85" 
+                  src="/KDC-Photos/HeroImgs/Hero_Image.avif" 
                   alt="Modern Physiotherapy Treatment Suite" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 
                 {/* Elegant Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1B382B]/80 via-transparent to-black/20" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#1B382B]/80 via-transparent to-black/20" />
                 
                 {/* Bottom Overlay Text */}
                 <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -110,7 +110,7 @@ export default function Hero({ onBookClick, onSymptomClick, onWatchVideo }) {
               </div>
 
               {/* Floating Aesthetic Card 1: Live Recovery Metric (Top Right) */}
-              <div className="absolute -top-6 -right-4 sm:-right-8 glass-panel p-4 rounded-2xl shadow-xl max-w-[240px] animate-float-slow hidden sm:block border border-white/80">
+              <div className="absolute -top-6 -right-4 sm:-right-8 glass-panel p-4 rounded-2xl shadow-xl max-w-60 animate-float-slow hidden sm:block border border-white/80">
                 <div className="flex items-center space-x-3 mb-2">
                   <div className="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800">
                     <Activity className="w-4 h-4" />
@@ -121,7 +121,7 @@ export default function Hero({ onBookClick, onSymptomClick, onWatchVideo }) {
                   </div>
                 </div>
                 <div className="w-full bg-[#E5DFD4] h-2 rounded-full overflow-hidden">
-                  <div className="bg-gradient-to-r from-emerald-600 to-[#C29B38] h-full w-[92%] rounded-full animate-pulse" />
+                  <div className="bg-linear-to-r from-emerald-600 to-[#C29B38] h-full w-[92%] rounded-full animate-pulse" />
                 </div>
                 <div className="flex justify-between items-center text-[10px] text-gray-500 mt-1 font-medium">
                   <span>Resolved in 5 wks</span>
@@ -130,7 +130,7 @@ export default function Hero({ onBookClick, onSymptomClick, onWatchVideo }) {
               </div>
 
               {/* Floating Aesthetic Card 2: Senior Specialist Availability (Bottom Left) */}
-              <div className="absolute -bottom-8 -left-4 sm:-left-8 glass-panel-dark p-4 rounded-2xl shadow-2xl max-w-[270px] text-white animate-float-reverse border border-[#DFBF6D]/40">
+              <div className="absolute -bottom-8 -left-4 sm:-left-8 glass-panel-dark p-4 rounded-2xl shadow-2xl max-w-67.5 text-white animate-float-reverse border border-[#DFBF6D]/40">
                 <div className="flex items-center space-x-3">
                   <img 
                     src="" 
